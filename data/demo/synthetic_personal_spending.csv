@@ -1,0 +1,305 @@
+transaction_id,date,merchant,category,amount,currency,account,transaction_type,related_transaction_id,description
+TX00001,2026-04-01,Example Employer,Salary,3200.00,EUR,Current,income,,Monthly salary
+TX00002,2026-04-02,Example Landlord,Housing,-950.00,EUR,Current,expense,,Monthly rent
+TX00008,2026-04-03,MARKET BASKET,groceries,-43.70,EUR,Card,expense,,Food shopping
+TX00024,2026-04-03,Corner Cafe,Eating out,-10.69,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00036,2026-04-03,City Taxi,Transport,-5.13,EUR,Card,expense,,Local journey
+TX00048,2026-04-03,Savings transfer,Transfer,-600.00,EUR,Current,transfer_out,TX00049,Transfer between owned accounts
+TX00049,2026-04-03,Savings transfer,Transfer,600.00,EUR,Savings,transfer_in,TX00048,Transfer between owned accounts
+TX00003,2026-04-04,City Energy,Utilities,-79.00,EUR,Current,expense,,Monthly utility payment
+TX00009,2026-04-04,MarketBasket,Groceries,-75.30,EUR,Card,expense,,Food shopping
+TX00025,2026-04-05,Noodle House,Dining,-10.69,EUR,Card,expense,,Restaurant meal
+TX00044,2026-04-05,Book Corner,Shopping,-63.60,EUR,Card,expense,,Personal purchase
+TX00010,2026-04-06,Market Basket,,-25.82,EUR,Card,expense,,Food shopping
+TX00037,2026-04-06,Metro Transit,Transport,-9.10,EUR,Card,expense,,Local journey
+TX00004,2026-04-07,MobileLink,Utilities,-19.99,EUR,Current,expense,,Mobile plan
+TX00011,2026-04-07,MARKET BASKET,Groceries,-73.73,EUR,Card,expense,,Food shopping
+TX00026,2026-04-07,Lunch Kitchen,Dining,-20.88,EUR,Card,expense,,Restaurant meal
+TX00005,2026-04-09,StreamBox,Subscriptions,-10.99,EUR,Card,expense,,Monthly streaming plan
+TX00012,2026-04-09,MarketBasket,Groceries,-69.94,EUR,Card,expense,,Food shopping
+TX00027,2026-04-09,Corner Cafe,Dining,-21.32,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00038,2026-04-09,City Taxi,Transport,-9.99,EUR,Card,expense,,Local journey
+TX00013,2026-04-10,Market Basket,Groceries,-58.97,EUR,Card,expense,,Food shopping
+TX00028,2026-04-11,Noodle House,Dining,-9.72,EUR,Card,expense,,Restaurant meal
+TX00045,2026-04-11,Home Supply,Shopping,-50.74,EUR,Card,expense,,Personal purchase
+TX00006,2026-04-12,CloudDrive,Subscriptions,-2.99,EUR,Card,expense,,Monthly storage plan
+TX00014,2026-04-12,MARKET BASKET,Groceries,-66.98,EUR,Card,expense,,Food shopping
+TX00039,2026-04-12,Metro Transit,Transport,-4.82,EUR,Card,expense,,Local journey
+TX00015,2026-04-13,MarketBasket,Groceries,-29.93,EUR,Card,expense,,Food shopping
+TX00015,2026-04-13,MarketBasket,Groceries,-29.93,EUR,Card,expense,,Food shopping
+TX00029,2026-04-13,Lunch Kitchen,Dining,-13.59,EUR,Card,expense,,Restaurant meal
+TX00016,2026-04-15,Market Basket,Groceries,-46.51,EUR,Card,expense,,Food shopping
+TX00030,2026-04-15,Corner Cafe,Dining,-19.62,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00040,2026-04-15,City Taxi,Transport,-14.81,EUR,Card,expense,,Local journey
+TX00007,2026-04-16,Gym Club,Fitness,-29.90,EUR,Current,expense,,Monthly membership
+TX00017,2026-04-17,MARKET BASKET,Groceries,-52.87,EUR,Card,expense,,Food shopping
+TX00031,2026-04-17,Noodle House,Dining,-10.62,EUR,Card,expense,,Restaurant meal
+TX00046,2026-04-17,Clothing Shop,Shopping,-62.55,EUR,Card,expense,,Personal purchase
+TX00018,2026-04-18,MarketBasket,Groceries,-63.16,EUR,Card,expense,,Food shopping
+TX00041,2026-04-18,Metro Transit,Transport,-10.28,EUR,Card,expense,,Local journey
+TX00032,2026-04-19,Lunch Kitchen,Dining,-16.07,EUR,Card,expense,,Restaurant meal
+TX00019,2026-04-20,Market Basket,Groceries,-24.98,EUR,Card,expense,,Food shopping
+TX00020,2026-04-21,MARKET BASKET,Groceries,-59.35,EUR,Card,expense,,Food shopping
+TX00033,2026-04-21,Corner Cafe,Dining,-10.36,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00042,2026-04-21,City Taxi,Transport,-16.95,EUR,Card,expense,,Local journey
+TX00021,2026-04-23,MarketBasket,groceries,-65.67,EUR,Card,expense,,Food shopping
+TX00034,2026-04-23,Noodle House,Dining,-18.38,EUR,Card,expense,,Restaurant meal
+TX00047,2026-04-23,Hobby Store,Shopping,-77.01,EUR,Card,expense,,Personal purchase
+TX00022,2026-04-24,Market Basket,Groceries,-29.43,EUR,Card,expense,,Food shopping
+TX00043,2026-04-24,Metro Transit,Transport,-14.17,EUR,Card,expense,,Local journey
+TX00035,2026-04-25,Lunch Kitchen,Eating out,-14.37,EUR,Card,expense,,Restaurant meal
+TX00023,2026-04-26,MARKET BASKET,Groceries,-59.13,EUR,Card,expense,,Food shopping
+TX00050,2026-05-01,Example Employer,Salary,3200.00,EUR,Current,income,,Monthly salary
+TX00051,2026-05-02,Example Landlord,Housing,-950.00,EUR,Current,expense,,Monthly rent
+TX00057,2026-05-03,MarketBasket,Groceries,-74.21,EUR,Card,expense,,Food shopping
+TX00073,2026-05-03,Corner Cafe,Dining,-10.65,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00085,2026-05-03,City Taxi,Transport,-18.25,EUR,Card,expense,,Local journey
+TX00097,2026-05-03,Savings transfer,Transfer,-600.00,EUR,Current,transfer_out,TX00098,Transfer between owned accounts
+TX00098,2026-05-03,Savings transfer,Transfer,600.00,EUR,Savings,transfer_in,TX00097,Transfer between owned accounts
+TX00052,2026-05-04,City Energy,Utilities,-79.00,EUR,Current,expense,,Monthly utility payment
+TX00058,2026-05-04,Market Basket,Groceries,-26.08,EUR,Card,expense,,Food shopping
+TX00074,2026-05-05,Noodle House,Dining,-11.65,EUR,Card,expense,,Restaurant meal
+TX00093,2026-05-05,Book Corner,Shopping,-72.79,EUR,Card,expense,,Personal purchase
+TX00059,2026-05-06,MARKET BASKET,Groceries,-65.05,EUR,Card,expense,,Food shopping
+TX00086,2026-05-06,Metro Transit,Transport,-16.90,EUR,Card,expense,,Local journey
+TX00053,2026-05-07,MobileLink,Utilities,-19.99,EUR,Current,expense,,Mobile plan
+TX00060,2026-05-07,MarketBasket,Groceries,-70.16,EUR,Card,expense,,Food shopping
+TX00075,2026-05-07,Lunch Kitchen,Dining,-14.63,EUR,Card,expense,,Restaurant meal
+TX00054,2026-05-09,StreamBox,Subscriptions,-10.99,EUR,Card,expense,,Monthly streaming plan
+TX00061,2026-05-09,Market Basket,Groceries,-68.20,EUR,Card,expense,,Food shopping
+TX00076,2026-05-09,Corner Cafe,Dining,-12.66,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00087,2026-05-09,City Taxi,Transport,-5.77,EUR,Card,expense,,Local journey
+TX00062,2026-05-10,MARKET BASKET,,-39.67,EUR,Card,expense,,Food shopping
+TX00077,2026-05-11,Noodle House,Dining,-14.77,EUR,Card,expense,,Restaurant meal
+TX00094,2026-05-11,Home Supply,Shopping,-73.39,EUR,Card,expense,,Personal purchase
+TX00055,2026-05-12,CloudDrive,Subscriptions,-2.99,EUR,Card,expense,,Monthly storage plan
+TX00063,2026-05-12,MarketBasket,Groceries,-40.95,EUR,Card,expense,,Food shopping
+TX00088,2026-05-12,Metro Transit,Transport,-6.70,EUR,Card,expense,,Local journey
+TX00064,2026-05-13,Market Basket,Groceries,-35.56,EUR,Card,expense,,Food shopping
+TX00078,2026-05-13,Lunch Kitchen,Dining,-9.10,EUR,Card,expense,,Restaurant meal
+TX00065,2026-05-15,MARKET BASKET,Groceries,-49.82,EUR,Card,expense,,Food shopping
+TX00079,2026-05-15,Corner Cafe,Dining,-16.00,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00089,2026-05-15,City Taxi,Transport,-21.40,EUR,Card,expense,,Local journey
+TX00056,2026-05-16,Gym Club,Fitness,-29.90,EUR,Current,expense,,Monthly membership
+TX00066,2026-05-17,MarketBasket,Groceries,-40.46,EUR,Card,expense,,Food shopping
+TX00080,2026-05-17,Noodle House,Dining,-18.40,EUR,Card,expense,,Restaurant meal
+TX00095,2026-05-17,Clothing Shop,Shopping,-20.07,EUR,Card,expense,,Personal purchase
+TX00067,2026-05-18,Market Basket,groceries,-36.86,EUR,Card,expense,,Food shopping
+TX00090,2026-05-18,Metro Transit,Transport,-12.21,EUR,Card,expense,,Local journey
+TX00295,2026-05-18,Tech Corner,Electronics,-899.00,EUR,Card,expense,,Laptop purchase
+TX00081,2026-05-19,Lunch Kitchen,Dining,-9.27,EUR,Card,expense,,Restaurant meal
+TX00068,2026-05-20,MARKET BASKET,Groceries,-32.28,EUR,Card,expense,,Food shopping
+TX00069,2026-05-21,MarketBasket,Groceries,-31.84,EUR,Card,expense,,Food shopping
+TX00082,2026-05-21,Corner Cafe,Dining,-13.28,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00091,2026-05-21,City Taxi,Transport,-20.87,EUR,Card,expense,,Local journey
+TX00070,2026-05-23,Market Basket,Groceries,-30.83,EUR,Card,expense,,Food shopping
+TX00083,2026-05-23,Noodle House,Eating out,-21.86,EUR,Card,expense,,Restaurant meal
+TX00096,2026-05-23,Hobby Store,Shopping,-70.45,EUR,Card,expense,,Personal purchase
+TX00071,2026-05-24,MARKET BASKET,Groceries,-32.96,EUR,Card,expense,,Food shopping
+TX00092,2026-05-24,Metro Transit,Transport,-21.49,EUR,Card,expense,,Local journey
+TX00084,2026-05-25,Lunch Kitchen,Dining,-13.92,EUR,Card,expense,,Restaurant meal
+TX00072,2026-05-26,MarketBasket,Groceries,-42.58,EUR,Card,expense,,Food shopping
+TX00099,2026-06-01,Example Employer,Salary,3200.00,EUR,Current,income,,Monthly salary
+TX00100,2026-06-02,Example Landlord,Housing,-950.00,EUR,Current,expense,,Monthly rent
+TX00296,2026-06-02,Tech Corner,Electronics,120.00,EUR,Card,refund,TX00295,Partial refund on laptop purchase
+TX00122,2026-06-03,Corner Cafe,Dining,-19.08,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00134,2026-06-03,City Taxi,Transport,-11.49,EUR,Card,expense,,Local journey
+TX00146,2026-06-03,Savings transfer,Transfer,-600.00,EUR,Current,transfer_out,TX00147,Transfer between owned accounts
+TX00147,2026-06-03,Savings transfer,Transfer,600.00,EUR,Savings,transfer_in,TX00146,Transfer between owned accounts
+TX00101,2026-06-04,City Energy,Utilities,-79.00,EUR,Current,expense,,Monthly utility payment
+TX00107,2026-06-04,MARKET BASKET,Groceries,-39.56,EUR,Card,expense,,Food shopping
+TX00123,2026-06-05,Noodle House,Dining,-18.54,EUR,Card,expense,,Restaurant meal
+TX00142,2026-06-05,Book Corner,Shopping,-76.86,EUR,Card,expense,,Personal purchase
+TX00108,2026-06-06,MarketBasket,Groceries,-67.93,EUR,Card,expense,,Food shopping
+TX00135,2026-06-06,Metro Transit,Transport,-13.52,EUR,Card,expense,,Local journey
+TX00102,2026-06-07,MobileLink,Utilities,-19.99,EUR,Current,expense,,Mobile plan
+TX00109,2026-06-07,Market Basket,Groceries,-74.70,EUR,Card,expense,,Food shopping
+TX00124,2026-06-07,Lunch Kitchen,Dining,-15.28,EUR,Card,expense,,Restaurant meal
+TX00103,2026-06-09,StreamBox,Subscriptions,-10.99,EUR,Card,expense,,Monthly streaming plan
+TX00110,2026-06-09,MARKET BASKET,Groceries,-30.33,EUR,Card,expense,,Food shopping
+TX00125,2026-06-09,Corner Cafe,Dining,-9.15,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00136,2026-06-09,City Taxi,Transport,-21.50,EUR,Card,expense,,Local journey
+TX00111,2026-06-10,MarketBasket,Groceries,-72.98,EUR,Card,expense,,Food shopping
+TX00126,2026-06-11,Noodle House,Dining,-19.86,EUR,Card,expense,,Restaurant meal
+TX00143,2026-06-11,Home Supply,Shopping,-89.08,EUR,Card,expense,,Personal purchase
+TX00104,2026-06-12,CloudDrive,Subscriptions,-2.99,EUR,Card,expense,,Monthly storage plan
+TX00112,2026-06-12,Market Basket,Groceries,-62.84,EUR,Card,expense,,Food shopping
+TX00112,2026-06-12,Market Basket,Groceries,-62.84,EUR,Card,expense,,Food shopping
+TX00137,2026-06-12,Metro Transit,Transport,-20.73,EUR,Card,expense,,Local journey
+TX00113,2026-06-13,MARKET BASKET,groceries,-75.37,EUR,Card,expense,,Food shopping
+TX00127,2026-06-13,Lunch Kitchen,Dining,-18.33,EUR,Card,expense,,Restaurant meal
+TX00114,2026-06-15,MarketBasket,Groceries,-40.20,EUR,Card,expense,,Food shopping
+TX00128,2026-06-15,Corner Cafe,Dining,-16.53,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00138,2026-06-15,City Taxi,Transport,-5.58,EUR,Card,expense,,Local journey
+TX00105,2026-06-16,Gym Club,Fitness,-29.90,EUR,Current,expense,,Monthly membership
+TX00115,2026-06-17,Market Basket,Groceries,-62.08,EUR,Card,expense,,Food shopping
+TX00129,2026-06-17,Noodle House,Dining,-11.18,EUR,Card,expense,,Restaurant meal
+TX00144,2026-06-17,Clothing Shop,Shopping,-87.55,EUR,Card,expense,,Personal purchase
+TX00116,2026-06-18,MARKET BASKET,Groceries,-19.36,EUR,Card,expense,,Food shopping
+TX00139,2026-06-18,Metro Transit,Transport,-9.22,EUR,Card,expense,,Local journey
+TX00130,2026-06-19,Lunch Kitchen,Dining,-20.49,EUR,Card,expense,,Restaurant meal
+TX00117,2026-06-20,MarketBasket,,-64.88,EUR,Card,expense,,Food shopping
+TX00118,2026-06-21,Market Basket,Groceries,-65.43,EUR,Card,expense,,Food shopping
+TX00131,2026-06-21,Corner Cafe,Eating out,-19.14,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00140,2026-06-21,City Taxi,Transport,-12.08,EUR,Card,expense,,Local journey
+TX00119,2026-06-23,MARKET BASKET,Groceries,-48.40,EUR,Card,expense,,Food shopping
+TX00132,2026-06-23,Noodle House,Dining,-14.26,EUR,Card,expense,,Restaurant meal
+TX00145,2026-06-23,Hobby Store,Shopping,-50.82,EUR,Card,expense,,Personal purchase
+TX00120,2026-06-24,MarketBasket,Groceries,-31.23,EUR,Card,expense,,Food shopping
+TX00141,2026-06-24,Metro Transit,Transport,-21.56,EUR,Card,expense,,Local journey
+TX00133,2026-06-25,Lunch Kitchen,Dining,-19.12,EUR,Card,expense,,Restaurant meal
+TX00121,2026-06-26,Market Basket,Groceries,-74.35,EUR,Card,expense,,Food shopping
+TX00106,2026-06-31,Market Basket,Groceries,-47.55,EUR,Card,expense,,Food shopping
+TX00148,2026-07-01,Example Employer,Salary,3200.00,EUR,Current,income,,Monthly salary
+TX00149,2026-07-02,Example Landlord,Housing,-950.00,EUR,Current,expense,,Monthly rent
+TX00155,2026-07-03,MARKET BASKET,Groceries,-71.31,EUR,Card,expense,,Food shopping
+TX00171,2026-07-03,Corner Cafe,Dining,-46.75,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00183,2026-07-03,City Taxi,Transport,-6.59,EUR,Card,expense,,Local journey
+TX00195,2026-07-03,Savings transfer,Transfer,-600.00,EUR,Current,transfer_out,TX00196,Transfer between owned accounts
+TX00196,2026-07-03,Savings transfer,Transfer,600.00,EUR,Savings,transfer_in,TX00195,Transfer between owned accounts
+TX00150,2026-07-04,City Energy,Utilities,-79.00,EUR,Current,expense,,Monthly utility payment
+TX00156,2026-07-04,MarketBasket,Groceries,-43.99,EUR,Card,expense,,Food shopping
+TX00172,2026-07-05,Noodle House,Dining,-34.59,EUR,Card,expense,,Restaurant meal
+TX00191,2026-07-05,Book Corner,Shopping,-67.18,EUR,Card,expense,,Personal purchase
+TX00157,2026-07-06,Market Basket,Groceries,-27.71,EUR,Card,expense,,Food shopping
+TX00184,2026-07-06,Metro Transit,Transport,-10.63,EUR,Card,expense,,Local journey
+TX00151,2026-07-07,MobileLink,Utilities,-19.99,EUR,Current,expense,,Mobile plan
+TX00158,2026-07-07,MARKET BASKET,Groceries,-62.40,EUR,Card,expense,,Food shopping
+TX00173,2026-07-07,Lunch Kitchen,Dining,-38.95,EUR,Card,expense,,Restaurant meal
+TX00152,2026-07-09,StreamBox,Subscriptions,-14.99,EUR,Card,expense,,Monthly streaming plan
+TX00159,2026-07-09,MarketBasket,groceries,-69.87,EUR,Card,expense,,Food shopping
+TX00174,2026-07-09,Corner Cafe,Dining,-40.24,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00185,2026-07-09,City Taxi,Transport,-18.55,EUR,Card,expense,,Local journey
+TX00160,2026-07-10,Market Basket,Groceries,-51.55,EUR,Card,expense,,Food shopping
+TX00175,2026-07-11,Noodle House,Dining,-33.15,EUR,Card,expense,,Restaurant meal
+TX00192,2026-07-11,Home Supply,Shopping,-87.63,EUR,Card,expense,,Personal purchase
+TX00153,2026-07-12,CloudDrive,Subscriptions,-2.99,EUR,Card,expense,,Monthly storage plan
+TX00161,2026-07-12,MARKET BASKET,Groceries,-46.76,EUR,Card,expense,,Food shopping
+TX00186,2026-07-12,Metro Transit,Transport,-6.33,EUR,Card,expense,,Local journey
+TX00162,2026-07-13,MarketBasket,Groceries,-19.08,EUR,Card,expense,,Food shopping
+TX00176,2026-07-13,Lunch Kitchen,Dining,-26.45,EUR,Card,expense,,Restaurant meal
+TX00163,2026-07-15,Market Basket,Groceries,-36.83,EUR,Card,expense,,Food shopping
+TX00177,2026-07-15,Corner Cafe,Dining,-38.52,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00187,2026-07-15,City Taxi,Transport,-13.45,EUR,Card,expense,,Local journey
+TX00154,2026-07-16,Gym Club,Fitness,-29.90,EUR,Current,expense,,Monthly membership
+TX00164,2026-07-17,MARKET BASKET,Groceries,-47.91,EUR,Card,expense,,Food shopping
+TX00178,2026-07-17,Noodle House,Dining,-30.69,EUR,Card,expense,,Restaurant meal
+TX00193,2026-07-17,Clothing Shop,Shopping,-80.57,EUR,Card,expense,,Personal purchase
+TX00165,2026-07-18,MarketBasket,,-27.36,EUR,Card,expense,,Food shopping
+TX00188,2026-07-18,Metro Transit,Transport,-12.32,EUR,Card,expense,,Local journey
+TX00179,2026-07-19,Lunch Kitchen,Eating out,-31.29,EUR,Card,expense,,Restaurant meal
+TX00166,2026-07-20,Market Basket,Groceries,-31.16,EUR,Card,expense,,Food shopping
+TX00167,2026-07-21,MARKET BASKET,Groceries,-28.57,EUR,Card,expense,,Food shopping
+TX00180,2026-07-21,Corner Cafe,Dining,-41.69,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00189,2026-07-21,City Taxi,Transport,-16.94,EUR,Card,expense,,Local journey
+TX00168,2026-07-23,MarketBasket,Groceries,-34.56,EUR,Card,expense,,Food shopping
+TX00181,2026-07-23,Noodle House,Dining,-26.23,EUR,Card,expense,,Restaurant meal
+TX00194,2026-07-23,Hobby Store,Shopping,-31.38,EUR,Card,expense,,Personal purchase
+TX00169,2026-07-24,Market Basket,Groceries,-39.35,EUR,Card,expense,,Food shopping
+TX00190,2026-07-24,Metro Transit,Transport,-4.83,EUR,Card,expense,,Local journey
+TX00182,2026-07-25,Lunch Kitchen,Dining,-50.19,EUR,Card,expense,,Restaurant meal
+TX00170,2026-07-26,MARKET BASKET,Groceries,-66.49,EUR,Card,expense,,Food shopping
+TX00197,2026-08-01,Example Employer,Salary,3200.00,EUR,Current,income,,Monthly salary
+TX00198,2026-08-02,Example Landlord,Housing,-950.00,EUR,Current,expense,,Monthly rent
+TX00204,2026-08-03,MarketBasket,Groceries,-42.44,EUR,Card,expense,,Food shopping
+TX00220,2026-08-03,Corner Cafe,Dining,-36.41,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00232,2026-08-03,City Taxi,Transport,-6.25,EUR,Card,expense,,Local journey
+TX00244,2026-08-03,Savings transfer,Transfer,-600.00,EUR,Current,transfer_out,TX00245,Transfer between owned accounts
+TX00245,2026-08-03,Savings transfer,Transfer,600.00,EUR,Savings,transfer_in,TX00244,Transfer between owned accounts
+TX00199,2026-08-04,City Energy,Utilities,-79.00,EUR,Current,expense,,Monthly utility payment
+TX00205,2026-08-04,Market Basket,groceries,-26.48,EUR,Card,expense,,Food shopping
+TX00221,2026-08-05,Noodle House,Dining,-48.24,EUR,Card,expense,,Restaurant meal
+TX00240,2026-08-05,Book Corner,Shopping,-25.37,EUR,Card,expense,,Personal purchase
+TX00206,2026-08-06,MARKET BASKET,Groceries,-56.06,EUR,Card,expense,,Food shopping
+TX00233,2026-08-06,Metro Transit,Transport,-13.78,EUR,Card,expense,,Local journey
+TX00200,2026-08-07,MobileLink,Utilities,-19.99,EUR,Current,expense,,Mobile plan
+TX00207,2026-08-07,MarketBasket,Groceries,-37.63,EUR,Card,expense,,Food shopping
+TX00222,2026-08-07,Lunch Kitchen,Dining,-35.09,EUR,Card,expense,,Restaurant meal
+TX00201,2026-08-09,StreamBox,Subscriptions,-14.99,EUR,Card,expense,,Monthly streaming plan
+TX00208,2026-08-09,Market Basket,Groceries,-20.28,EUR,Card,expense,,Food shopping
+TX00223,2026-08-09,Corner Cafe,Dining,-36.15,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00234,2026-08-09,City Taxi,Transport,-18.38,EUR,Card,expense,,Local journey
+TX00224,2026-08-11,Noodle House,Dining,-35.14,EUR,Card,expense,,Restaurant meal
+TX00241,2026-08-11,Home Supply,Shopping,-95.28,EUR,Card,expense,,Personal purchase
+TX00202,2026-08-12,CloudDrive,Subscriptions,-2.99,EUR,Card,expense,,Monthly storage plan
+TX00210,2026-08-12,MarketBasket,Groceries,-54.07,EUR,Card,expense,,Food shopping
+TX00235,2026-08-12,Metro Transit,Transport,-9.71,EUR,Card,expense,,Local journey
+TX00211,2026-08-13,Market Basket,Groceries,-53.49,EUR,Card,expense,,Food shopping
+TX00225,2026-08-13,Lunch Kitchen,Dining,-48.00,EUR,Card,expense,,Restaurant meal
+TX00299,2026-08-14,CodeNotebook,Subscriptions,-19.00,USD,Card,expense,,Monthly developer subscription
+TX00212,2026-08-15,MARKET BASKET,Groceries,-69.09,EUR,Card,expense,,Food shopping
+TX00226,2026-08-15,Corner Cafe,Dining,-40.30,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00236,2026-08-15,City Taxi,Transport,-5.09,EUR,Card,expense,,Local journey
+TX00203,2026-08-16,Gym Club,Fitness,-29.90,EUR,Current,expense,,Monthly membership
+TX00213,2026-08-17,MarketBasket,Groceries,-73.22,EUR,Card,expense,,Food shopping
+TX00227,2026-08-17,Noodle House,Eating out,-50.67,EUR,Card,expense,,Restaurant meal
+TX00242,2026-08-17,Clothing Shop,Shopping,-35.79,EUR,Card,expense,,Personal purchase
+TX00214,2026-08-18,Market Basket,,-40.66,EUR,Card,expense,,Food shopping
+TX00237,2026-08-18,Metro Transit,Transport,-19.91,EUR,Card,expense,,Local journey
+TX00228,2026-08-19,Lunch Kitchen,Dining,-32.40,EUR,Card,expense,,Restaurant meal
+TX00228,2026-08-19,Lunch Kitchen,Dining,-32.40,EUR,Card,expense,,Restaurant meal
+TX00215,2026-08-20,MARKET BASKET,Groceries,-53.79,EUR,Card,expense,,Food shopping
+TX00297,2026-08-20,Home Supply,Shopping,-44.90,EUR,Card,expense,,Card purchase
+TX00298,2026-08-20,Home Supply,Shopping,-44.90,EUR,Card,expense,,Card purchase
+TX00216,2026-08-21,MarketBasket,Groceries,-58.44,EUR,Card,expense,,Food shopping
+TX00229,2026-08-21,Corner Cafe,Dining,-44.97,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00238,2026-08-21,City Taxi,Transport,-8.74,EUR,Card,expense,,Local journey
+TX00217,2026-08-23,Market Basket,Groceries,-18.92,EUR,Card,expense,,Food shopping
+TX00230,2026-08-23,Noodle House,Dining,-50.38,EUR,Card,expense,,Restaurant meal
+TX00243,2026-08-23,Hobby Store,Shopping,-94.27,EUR,Card,expense,,Personal purchase
+TX00218,2026-08-24,MARKET BASKET,groceries,-58.92,EUR,Card,expense,,Food shopping
+TX00239,2026-08-24,Metro Transit,Transport,-11.93,EUR,Card,expense,,Local journey
+TX00231,2026-08-25,Lunch Kitchen,Dining,-25.28,EUR,Card,expense,,Restaurant meal
+TX00219,2026-08-26,MarketBasket,Groceries,-72.49,EUR,Card,expense,,Food shopping
+TX00246,2026-09-01,Example Employer,Salary,3200.00,EUR,Current,income,,Monthly salary
+TX00247,2026-09-02,Example Landlord,Housing,-950.00,EUR,Current,expense,,Monthly rent
+TX00253,2026-09-03,Market Basket,Groceries,-62.51,EUR,Card,expense,,Food shopping
+TX00269,2026-09-03,Corner Cafe,Dining,-35.87,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00281,2026-09-03,City Taxi,Transport,-6.02,EUR,Card,expense,,Local journey
+TX00293,2026-09-03,Savings transfer,Transfer,-600.00,EUR,Current,transfer_out,TX00294,Transfer between owned accounts
+TX00294,2026-09-03,Savings transfer,Transfer,600.00,EUR,Savings,transfer_in,TX00293,Transfer between owned accounts
+TX00248,2026-09-04,City Energy,Utilities,-79.00,EUR,Current,expense,,Monthly utility payment
+TX00254,2026-09-04,MARKET BASKET,Groceries,-36.33,EUR,Card,expense,,Food shopping
+TX00270,2026-09-05,Noodle House,Dining,-46.60,EUR,Card,expense,,Restaurant meal
+TX00289,2026-09-05,Book Corner,Shopping,-83.79,EUR,Card,expense,,Personal purchase
+TX00255,2026-09-06,MarketBasket,Groceries,-19.73,EUR,Card,expense,,Food shopping
+TX00282,2026-09-06,Metro Transit,Transport,-6.28,EUR,Card,expense,,Local journey
+TX00249,2026-09-07,MobileLink,Utilities,-19.99,EUR,Current,expense,,Mobile plan
+TX00256,2026-09-07,Market Basket,Groceries,-67.30,EUR,Card,expense,,Food shopping
+TX00271,2026-09-07,Lunch Kitchen,Dining,-36.96,EUR,Card,expense,,Restaurant meal
+TX00250,2026-09-09,StreamBox,Subscriptions,-14.99,EUR,Card,expense,,Monthly streaming plan
+TX00257,2026-09-09,MARKET BASKET,Groceries,-40.41,EUR,Card,expense,,Food shopping
+TX00272,2026-09-09,Corner Cafe,Dining,-27.50,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00283,2026-09-09,City Taxi,Transport,-6.67,EUR,Card,expense,,Local journey
+TX00258,2026-09-10,MarketBasket,Groceries,-18.56,EUR,Card,expense,,Food shopping
+TX00273,2026-09-11,Noodle House,Dining,-40.22,EUR,Card,expense,,Restaurant meal
+TX00290,2026-09-11,Home Supply,Shopping,-76.15,EUR,Card,expense,,Personal purchase
+TX00251,2026-09-12,CloudDrive,Subscriptions,-2.99,EUR,Card,expense,,Monthly storage plan
+TX00259,2026-09-12,Market Basket,Groceries,-18.85,EUR,Card,expense,,Food shopping
+TX00284,2026-09-12,Metro Transit,Transport,-19.73,EUR,Card,expense,,Local journey
+TX00260,2026-09-13,MARKET BASKET,Groceries,-72.32,EUR,Card,expense,,Food shopping
+TX00274,2026-09-13,Lunch Kitchen,Dining,-33.82,EUR,Card,expense,,Restaurant meal
+TX00300,2026-09-14,CodeNotebook,Subscriptions,-19.00,USD,Card,expense,,Monthly developer subscription
+TX00261,2026-09-15,MarketBasket,Groceries,-73.34,EUR,Card,expense,,Food shopping
+TX00275,2026-09-15,Corner Cafe,Eating out,-35.64,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00285,2026-09-15,City Taxi,Transport,-14.24,EUR,Card,expense,,Local journey
+TX00252,2026-09-16,Gym Club,Fitness,-29.90,EUR,Current,expense,,Monthly membership
+TX00262,2026-09-17,Market Basket,,-60.78,EUR,Card,expense,,Food shopping
+TX00276,2026-09-17,Noodle House,Dining,-50.89,EUR,Card,expense,,Restaurant meal
+TX00291,2026-09-17,Clothing Shop,Shopping,-70.18,EUR,Card,expense,,Personal purchase
+TX00263,2026-09-18,MARKET BASKET,Groceries,-19.47,EUR,Card,expense,,Food shopping
+TX00286,2026-09-18,Metro Transit,Transport,-4.61,EUR,Card,expense,,Local journey
+TX00277,2026-09-19,Lunch Kitchen,Dining,-30.54,EUR,Card,expense,,Restaurant meal
+TX00264,2026-09-20,MarketBasket,groceries,-57.11,EUR,Card,expense,,Food shopping
+TX00265,2026-09-21,Market Basket,Groceries,-68.10,EUR,Card,expense,,Food shopping
+TX00278,2026-09-21,Corner Cafe,Dining,-30.77,EUR,Card,expense,,"Coffee, snack and lunch"
+TX00287,2026-09-21,City Taxi,Transport,-21.39,EUR,Card,expense,,Local journey
+TX00266,2026-09-23,MARKET BASKET,Groceries,-59.02,EUR,Card,expense,,Food shopping
+TX00279,2026-09-23,Noodle House,Dining,-32.82,EUR,Card,expense,,Restaurant meal
+TX00292,2026-09-23,Hobby Store,Shopping,-79.81,EUR,Card,expense,,Personal purchase
+TX00301,2026-09-23,Online Workshop,Learning,-49.00,USD,Card,expense,,Workshop registration
+TX00267,2026-09-24,MarketBasket,Groceries,-68.15,EUR,Card,expense,,Food shopping
+TX00288,2026-09-24,Metro Transit,Transport,-16.21,EUR,Card,expense,,Local journey
+TX00280,2026-09-25,Lunch Kitchen,Dining,-37.82,EUR,Card,expense,,Restaurant meal
+TX00268,2026-09-26,Market Basket,Groceries,-43.15,EUR,Card,expense,,Food shopping
+TX00209,,MARKET BASKET,Groceries,-38.48,EUR,Card,expense,,Food shopping
