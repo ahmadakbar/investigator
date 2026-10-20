@@ -11,23 +11,34 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+
 def cmd_analyze(args):
-    print(f"analyze {args.csv} question={args.question!r}")
+    pass
+
 
 def cmd_evaluate(args):
-    print(f"evaluate split={args.split}")
+    pass
+
 
 def cmd_improve(args):
-    print(f"improve artifact={args.artifact} candidates={args.candidates} rounds={args.rounds}")
+    pass
+
 
 def cmd_compare(args):
-    print(f"compare {args.left} vs {args.right}")
+    pass
+
+
 def cmd_promote(args):
-    print(f"promote {args.version}")
+    pass
+
+
 def cmd_rollback(args):
-    print(f"rollback to {args.version}")
+    pass
+
+
 def cmd_resume(args):
-    print(f"resume {args.run_id}")
+    pass
+
 
 def positive_int(value: str) -> int:
     n = int(value)
@@ -42,38 +53,56 @@ def existing_file(value: str) -> Path:
         raise argparse.ArgumentTypeError(f"file not found: {value}")
     return path
 
+
 def run() -> None:
     parser = argparse.ArgumentParser(
         prog="investigator",
         description=__doc__,
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    sub = parser.add_subparsers(title="commands", dest="command", metavar="COMMAND", required=True)
+    sub = parser.add_subparsers(
+        title="commands", dest="command", metavar="COMMAND", required=True
+    )
 
     ## python investigator analyze transactions.csv --question "Explain the spending changes"
     p = sub.add_parser("analyze", help="analyze a transactions CSV")
     p.add_argument("csv", type=existing_file, help="path to the transactions CSV")
-    p.add_argument("-q", "--question", required=True, help="question to answer about the data")
+    p.add_argument(
+        "-q", "--question", required=True, help="question to answer about the data"
+    )
     p.set_defaults(func=cmd_analyze)
 
     # python investigator evaluate --split development
-    p = sub.add_parser("evaluate", help="evaluate the current version on a dataset split")
-    p.add_argument("--split", default="development", help="dataset split to evaluate on")
+    p = sub.add_parser(
+        "evaluate", help="evaluate the current version on a dataset split"
+    )
+    p.add_argument(
+        "--split", default="development", help="dataset split to evaluate on"
+    )
     p.set_defaults(func=cmd_evaluate)
 
     # python investigator improve --artifact instructions --candidates 3 --rounds 1
     p = sub.add_parser("improve", help="generate and score candidate improvements")
-    p.add_argument("--artifact", required=True, help="which artifact to improve (e.g. instructions)")
-    p.add_argument("--candidates", type=positive_int, default=3, help="candidates per round")
-    p.add_argument("--rounds", type=positive_int, default=1, help="number of improvement rounds")
+    p.add_argument(
+        "--artifact",
+        required=True,
+        help="which artifact to improve (e.g. instructions)",
+    )
+    p.add_argument(
+        "--candidates", type=positive_int, default=3, help="candidates per round"
+    )
+    p.add_argument(
+        "--rounds", type=positive_int, default=1, help="number of improvement rounds"
+    )
     p.set_defaults(func=cmd_improve)
 
     # python investigator compare baseline candidate-001
     p = sub.add_parser("compare", help="compare two versions")
     p.add_argument("left", metavar="VERSION_A", help="first version (e.g. baseline)")
-    p.add_argument("right", metavar="VERSION_B", help="second version (e.g. candidate-001)")
+    p.add_argument(
+        "right", metavar="VERSION_B", help="second version (e.g. candidate-001)"
+    )
     p.set_defaults(func=cmd_compare)
-
 
     # python investigator promote candidate-001
     p = sub.add_parser("promote", help="make a candidate the active version")
@@ -91,7 +120,6 @@ def run() -> None:
     p.set_defaults(func=cmd_resume)
 
     return parser
-
 
 
 if __name__ == "__main__":
