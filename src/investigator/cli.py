@@ -1,3 +1,4 @@
+"""TODO."""
 import argparse
 import logging
 import sys
@@ -13,34 +14,42 @@ logger = logging.getLogger(__name__)
 
 
 def cmd_analyze(args):
-    pass
-
+    """:param args:"""
 
 def cmd_evaluate(args):
+    """:param args:"""
     pass
 
 
 def cmd_improve(args):
+    """:param args:"""
     pass
 
 
 def cmd_compare(args):
+    """:param args:"""
     pass
 
 
 def cmd_promote(args):
+    """:param args:"""
     pass
 
 
 def cmd_rollback(args):
+    """:param args:"""
     pass
 
 
 def cmd_resume(args):
+    """:param args:"""
     pass
 
 
 def positive_int(value: str) -> int:
+    """:param value:
+    :return:
+    """  # noqa: D205
     n = int(value)
     if n <= 0:
         raise argparse.ArgumentTypeError(f"{n} must be > 0")
@@ -48,6 +57,9 @@ def positive_int(value: str) -> int:
 
 
 def existing_file(value: str) -> Path:
+    """:param value:
+    :return:
+    """  # noqa: D205
     path = Path(value)
     if not path.is_file():
         raise argparse.ArgumentTypeError(f"file not found: {value}")
@@ -55,6 +67,7 @@ def existing_file(value: str) -> Path:
 
 
 def run() -> None:
+    """:return:"""
     parser = argparse.ArgumentParser(
         prog="investigator",
         description=__doc__,
