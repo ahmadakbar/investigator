@@ -36,6 +36,11 @@ dev = [
 requires = ["setuptools>=83.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
+[dependency-groups]
+dev = [
+    "ruff>=0.17.1",
+]
+
 [tool.setuptools]
 packages = ["src"]
 
