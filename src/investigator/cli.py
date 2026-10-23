@@ -1,8 +1,15 @@
 """TODO."""
 import argparse
+import csv
 import logging
 import sys
+from enum import Enum, auto
 from pathlib import Path
+from typing import Iterator
+
+from pydantic import ValidationError
+
+from investigator.schemas import Transaction
 
 logging.basicConfig(
     level=logging.INFO,
@@ -15,7 +22,36 @@ logger = logging.getLogger(__name__)
 
 def cmd_analyze(args):
     """:param args:"""
+    logger.info(f"analyze {args.csv} question={args.question!r}")
+    ts = load_transactions(args.csv)
+    for rec in ts:
+       logger.info(rec)
 
+
+class Outcome(Enum):
+    OK = auto()
+    INVALID = auto()
+    ERROR = auto()
+
+def load_transactions(path: str | Path) -> Iterator[tuple[Outcome, object]] :
+    """Load and convert a transaction from a file.
+
+    :param path: str | Path
+    :return: Iterator[Transaction]
+
+    """
+    with open(path, newline="", encoding="utf-8") as f:
+        for line_no, row in enumerate(csv.DictReader(f), start=2):
+            try:
+                 tx = Transaction(**row)
+            except ValidationError as e:
+                yield Outcome.INVALID, (row, e)
+                logger.error(f"line {line_no}: {e}")
+            except Exception as e:
+                logger.error(f"line {line_no}: {e}")
+                yield Outcome.ERROR, (row, e)
+            else:
+                yield Outcome.OK, tx
 def cmd_evaluate(args):
     """:param args:"""
     pass
@@ -66,7 +102,7 @@ def existing_file(value: str) -> Path:
     return path
 
 
-def run() -> None:
+def build_parser() -> argparse.ArgumentParser:
     """:return:"""
     parser = argparse.ArgumentParser(
         prog="investigator",
@@ -134,6 +170,17 @@ def run() -> None:
 
     return parser
 
+def run(argv: list[str] | None = None):
+    parser = build_parser()
+    args = parser.parse_args(argv)
+
+    # REMAINDER may keep a leading '--' separator; drop it.
+    if getattr(args, "cmd_args", None) and args.cmd_args[0] == "--":
+        args.cmd_args = args.cmd_args[1:]
+
+    args.parser = parser  # handlers can call args.parser.error(...)
+    args.func(args)
 
 if __name__ == "__main__":
-    run()
+    #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')
+    sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))

@@ -10,6 +10,7 @@ dependencies = [
     "langchain-tavily>=0.2.18",
     "langchain-google-genai>=4.2.7",
     "pydantic>=2.13.4",
+    "pydantic-extra-types>=2.11.1",
     "rich>=15.0.0",
     "jupyter>=1.1.1",
     "ipykernel>=7.3.0",
@@ -41,8 +42,11 @@ dev = [
     "ruff>=0.17.1",
 ]
 
-[tool.setuptools]
-packages = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["investigator", "investigator.*"]
+namespaces = true
 
 [tool.setuptools.package-data]
 "*" = ["py.typed"]
@@ -73,3 +77,6 @@ convention = "google"
 
 [tool.ruff.lint.flake8-tidy-imports]
 ban-relative-imports = "all"
+
+[project.scripts]
+investigator = "investigator.cli:run"
