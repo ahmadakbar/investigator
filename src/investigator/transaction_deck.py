@@ -97,18 +97,19 @@ class TransactionDeck(Sequence[Record]):
 
     def _load(self, i: int) -> Record:
         num, line_no = i + 1, self._line_nos[i]
+        dataset_id = self.digest
         row: dict[str, str] = {}
         raw: bytes=b""
         try:
             row, raw  = self._read_row(i)
             tx = Transaction(**row)
         except ValidationError as e:
-            return Record(num, line_no, Outcome.INVALID, row, str(raw, "utf-8"), error=e)
+            return Record(dataset_id, num, line_no, Outcome.INVALID, row, str(raw, "utf-8"), error=e)
         except RowError as e:
-            return Record(num, line_no, Outcome.ERROR, row, str(e.raw, "utf-8")  , error=e)
+            return Record(dataset_id, num, line_no, Outcome.ERROR, row, str(e.raw, "utf-8")  , error=e)
         except Exception as e:
-            return Record(num, line_no, Outcome.ERROR, row, str(raw, "utf-8"), error=e)
-        return Record(num, line_no, Outcome.OK, row, str(raw, "utf-8"), transaction=tx)
+            return Record(dataset_id, num, line_no, Outcome.ERROR, row, str(raw, "utf-8"), error=e)
+        return Record(dataset_id, num, line_no, Outcome.OK, row, str(raw, "utf-8"), transaction=tx)
 
     def close(self) -> None:
         self._file.close()

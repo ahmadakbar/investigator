@@ -50,6 +50,7 @@ class Transaction:
 
 
 class Record(NamedTuple):
+    dataset_id: str
     record_number: int             # 1-based index of the data record
     line_no: int                   # physical line where the record starts
     outcome: Outcome
@@ -57,5 +58,9 @@ class Record(NamedTuple):
     raw:str
     transaction: Transaction | None = None
     error: Exception | None = None
+
+    @property
+    def source_row_id(self) -> str:
+        return f"{self.dataset_id}:{self.num}"
 
 

@@ -32,10 +32,7 @@ def load(path: str | Path):
         logger.info(f"""digest: {deck.digest}, length: {len(deck)}""")
         logger.info(Counter(r.outcome for r in deck))
         for r in deck:
-            if r.outcome is not Outcome.OK:
-                logger.error("ERROR: line %d: %s", r.line_no, r.error)
-            else:
-                logger.info(r)
+            logger.info(r)
 def cmd_evaluate(args):
     """:param args:"""
     pass
@@ -166,6 +163,6 @@ def run(argv: list[str] | None = None):
     args.func(args)
 
 if __name__ == "__main__":
-    #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')
     #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/empty.csv --question "Explain"'.split(' ')
+    #sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
     sys.exit(run())
