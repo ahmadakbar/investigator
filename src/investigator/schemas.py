@@ -2,10 +2,9 @@
 
 import datetime as dt
 from decimal import Decimal, InvalidOperation
-from enum import StrEnum
-from typing import Annotated, Any
+from enum import Enum, StrEnum, auto
+from typing import Annotated, Any, NamedTuple
 
-import pycountry
 from pydantic import BeforeValidator, ConfigDict
 from pydantic.dataclasses import dataclass
 from pydantic_extra_types.currency_code import ISO4217
@@ -25,6 +24,10 @@ class TransactionType(StrEnum):
     INCOME ="income"
     EXPENSE = "expense"
 
+class Outcome(Enum):
+    OK = auto()
+    INVALID = auto()
+    ERROR = auto()
 
 @dataclass(frozen=True, slots=True, config=ConfigDict(str_strip_whitespace=True))
 class Transaction:
@@ -46,6 +49,13 @@ class Transaction:
 
 
 
-
+class Record(NamedTuple):
+    record_number: int             # 1-based index of the data record
+    line_no: int                   # physical line where the record starts
+    outcome: Outcome
+    row: dict[str, str]
+    raw:str
+    transaction: Transaction | None = None
+    error: Exception | None = None
 
 

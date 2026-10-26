@@ -1,57 +1,41 @@
 """TODO."""
 import argparse
-import csv
 import logging
 import sys
-from enum import Enum, auto
 from pathlib import Path
-from typing import Iterator
+from typing import Counter
 
-from pydantic import ValidationError
-
-from investigator.schemas import Transaction
+from investigator.schemas import Outcome
+from investigator.transaction_deck import load_transactions
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
     stream=sys.stdout,
 )
 
 logger = logging.getLogger(__name__)
 
-
 def cmd_analyze(args):
     """:param args:"""
     logger.info(f"analyze {args.csv} question={args.question!r}")
-    ts = load_transactions(args.csv)
-    for rec in ts:
-       logger.info(rec)
+    load(args.csv)
 
-
-class Outcome(Enum):
-    OK = auto()
-    INVALID = auto()
-    ERROR = auto()
-
-def load_transactions(path: str | Path) -> Iterator[tuple[Outcome, object]] :
+def load(path: str | Path):
     """Load and convert a transaction from a file.
 
     :param path: str | Path
     :return: Iterator[Transaction]
 
     """
-    with open(path, newline="", encoding="utf-8") as f:
-        for line_no, row in enumerate(csv.DictReader(f), start=2):
-            try:
-                 tx = Transaction(**row)
-            except ValidationError as e:
-                yield Outcome.INVALID, (row, e)
-                logger.error(f"line {line_no}: {e}")
-            except Exception as e:
-                logger.error(f"line {line_no}: {e}")
-                yield Outcome.ERROR, (row, e)
+    with load_transactions(path) as deck:
+        logger.info(f"""digest: {deck.digest}, length: {len(deck)}""")
+        logger.info(Counter(r.outcome for r in deck))
+        for r in deck:
+            if r.outcome is not Outcome.OK:
+                logger.error("ERROR: line %d: %s", r.line_no, r.error)
             else:
-                yield Outcome.OK, tx
+                logger.info(r)
 def cmd_evaluate(args):
     """:param args:"""
     pass
@@ -183,4 +167,5 @@ def run(argv: list[str] | None = None):
 
 if __name__ == "__main__":
     #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')
-    sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
+    #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/empty.csv --question "Explain"'.split(' ')
+    sys.exit(run())
