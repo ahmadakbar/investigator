@@ -1,21 +1,22 @@
 from collections import defaultdict
 from datetime import date
-from typing import Any, Counter, Generator, Iterable, Iterator, NoReturn
+from typing import Counter, Iterator, NoReturn
 
 from investigator.schemas import (
     DatasetProfile,
     Outcome,
     QualityIssue,
     QualityIssueType,
-    Transaction,
     Record,
+    Transaction,
 )
 from investigator.transaction_deck import TransactionDeck
 
 
 def profile_dataset(deck: TransactionDeck) -> DatasetProfile:
-    earliest_date, lastest_date, missing_dates = get_date_coverage(deck)
-    missing_categories = find_uncategorized_transactions(deck)
+    """Profile the transaction dataset."""
+    earliest_date, lastest_date, missing_dates = _get_date_coverage(deck)
+    missing_categories = _find_uncategorized_transactions(deck)
 
     return DatasetProfile(
         deck.digest,
@@ -35,7 +36,7 @@ def profile_dataset(deck: TransactionDeck) -> DatasetProfile:
     )
 
 
-def find_uncategorized_transactions(deck: TransactionDeck) -> Iterator[Transaction]:
+def _find_uncategorized_transactions(deck: TransactionDeck) -> Iterator[Transaction]:
     missing_categories = (
         tx
         for r in deck
@@ -44,7 +45,7 @@ def find_uncategorized_transactions(deck: TransactionDeck) -> Iterator[Transacti
     return missing_categories
 
 
-def get_date_coverage(deck: TransactionDeck) -> tuple[date | None, date | None, Iterator[Transaction]]:
+def _get_date_coverage(deck: TransactionDeck) -> tuple[date | None, date | None, Iterator[Transaction]]:
     valid_dates = list(
         d
         for r in deck
@@ -60,11 +61,12 @@ def get_date_coverage(deck: TransactionDeck) -> tuple[date | None, date | None, 
     return earliest_date, lastest_date, missing_dates
 
 
-def assert_never(value: NoReturn) -> NoReturn:
+def _assert_never(value: NoReturn) -> NoReturn:
     raise AssertionError(f"Unhandled enum member: {value}")
 
 
 def check_quality(deck: TransactionDeck) -> list[QualityIssue]:
+    """Quality check for the transaction dataset."""
     issues:list[QualityIssue] =[]
     for t in deck:
         match t.outcome:
@@ -82,15 +84,15 @@ def check_quality(deck: TransactionDeck) -> list[QualityIssue]:
             case unhandled:
                 # If you add an Outcome.BLAH tomorrow,
                 # type checkers will throw a compile error right here.
-                assert_never(unhandled)
-    grp,_ =partition_valid_records(deck)
+                _assert_never(unhandled)
+    grp,_ =_partition_valid_records(deck)
     for g in grp:
         if len(g)>1:
             issues.append(QualityIssue(QualityIssueType.EXACT_DUPLICATE, [ s.source_row_id for s in g], "Duplicate Entry."))
     return issues
 
 
-def partition_valid_records(
+def _partition_valid_records(
         records: TransactionDeck
 ) -> tuple[list[list[Record]], list[Record]]:
 
@@ -125,4 +127,5 @@ def partition_valid_records(
     # Convert our grouped dictionary values back into a clean list of lists
     valid_partitions = list(partitions_map.values())
 
-    return valid_partitions, bad_records    
+    return valid_partitions, bad_records
+

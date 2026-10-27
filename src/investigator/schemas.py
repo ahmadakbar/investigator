@@ -1,7 +1,7 @@
 """TODO."""
 
 import datetime as dt
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal
 from enum import Enum, StrEnum, auto
 from typing import Annotated, Any, Mapping, NamedTuple
 
@@ -50,6 +50,7 @@ class Transaction:
 
 
 class Record(NamedTuple):
+    """Represents a record from csv file."""
     dataset_id: str
     record_number: int             # 1-based index of the data record
     line_no: int                   # physical line where the record starts
@@ -87,6 +88,7 @@ def _date_span(start: dt.date | None, end: dt.date | None) -> str:
 
 
 class DatasetProfile(NamedTuple):
+    """Represents the DatasetProfile result."""
     dataset_id: str
     columns: list[str]
     total_records: int
@@ -119,6 +121,7 @@ class QualityIssueType(StrEnum):
     MISSING_CATEGORY = "missing_category"
     EXACT_DUPLICATE = "exact_duplicate"
 class QualityIssue(NamedTuple):
+    """Represents QualityIssue result type"""
     issue_type: QualityIssueType
     source_row_ids: list[str]
     message: str

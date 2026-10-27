@@ -10,6 +10,7 @@ from investigator.schemas import Outcome, Record, Transaction
 
 
 class RowError(Exception):
+    """Represents an error when parsing and loading a row."""
     def __init__(self, message: str, index: int, raw: bytes, values: list[str] | None = None):
         super().__init__(message)
         self.index = index
@@ -122,4 +123,5 @@ class TransactionDeck(Sequence[Record]):
 
 
 def load_transactions(path: str | Path) -> TransactionDeck:
+    """Load the transaction dataset into the deck."""
     return TransactionDeck(path)
