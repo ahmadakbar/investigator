@@ -3,9 +3,9 @@ import argparse
 import logging
 import sys
 from pathlib import Path
-from typing import Counter
 
-from investigator.schemas import Outcome
+from investigator.processing import check_quality, profile_dataset
+from investigator.schemas import DatasetProfile, QualityIssue
 from investigator.transaction_deck import load_transactions
 
 logging.basicConfig(
@@ -30,9 +30,12 @@ def load(path: str | Path):
     """
     with load_transactions(path) as deck:
         logger.info(f"""digest: {deck.digest}, length: {len(deck)}""")
-        logger.info(Counter(r.outcome for r in deck))
-        for r in deck:
-            logger.info(r)
+        df: DatasetProfile =  profile_dataset(deck)
+        logger.info(df)
+        cq: list[QualityIssue] = check_quality(deck)
+        logger.info(f"{len(cq)} issues found.")
+        for issue in cq:
+            logger.info(issue)
 def cmd_evaluate(args):
     """:param args:"""
     pass
