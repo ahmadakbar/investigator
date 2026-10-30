@@ -39,7 +39,7 @@ def load(path: str | Path):
         logger.info(f"{len(cq)} issues found.")
         for issue in cq:
             logger.info(issue)
-        result = summarize_spending(deck, start_date=None, end_date=None, key=lambda t:t.category)
+        result = summarize_spending(deck, start_date=None, end_date=None, key=lambda t:(t.category,))
         logger.info(result)
 def cmd_evaluate(args):
     """:param args:"""

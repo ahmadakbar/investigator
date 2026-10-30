@@ -46,7 +46,17 @@ class Transaction:
     def __post_init__(self) -> None:
         if not isinstance(self.amount, Decimal):
             raise TypeError(f"amount must be Decimal, got {type(self.amount).__name__}")
+        if (
+                self.transaction_type is TransactionType.EXPENSE
+                and self.amount > 0
+        ):
+           raise ValueError("Expense amount must not be positive.")
 
+        if (
+                self.transaction_type is TransactionType.REFUND
+                and self.amount < 0
+        ):
+           raise ValueError("Refund amount must not be negative.")
 
 
 class Record(NamedTuple):

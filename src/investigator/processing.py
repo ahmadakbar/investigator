@@ -1,9 +1,10 @@
+import itertools
 import logging
 from collections import defaultdict
 from collections.abc import Hashable
 from datetime import date
 from decimal import Decimal
-from typing import Callable, Counter, Iterator, NoReturn, Sequence
+from typing import Callable, Counter, Iterator, NoReturn, Sequence, Any
 
 from pydantic_extra_types.currency_code import ISO4217
 
@@ -137,7 +138,7 @@ def _partition_valid_records(
     return valid_partitions, bad_records
 
 
-def summarize_spending[K:Hashable](
+def summarize_spending[K:tuple[str, ...]](
         deck: TransactionDeck,
         *,
         start_date: date | None = None,
@@ -152,9 +153,9 @@ def summarize_spending[K:Hashable](
 
 
 
-def _get_spending[K:Hashable](valid_records: list[list[Record]], key: Callable[[Transaction], K] | None, ) -> SpendingSummary:
-    gross_by_keys: defaultdict[tuple[str, ...], Decimal] = defaultdict(Decimal)
-    refunds_by_keys: defaultdict[tuple[str, ...], Decimal] = defaultdict(Decimal)
+def _get_spending[K:tuple[str, ...]](valid_records: list[list[Record]], key: Callable[[Transaction], K] | None, ) -> SpendingSummary:
+    gross_by_keys: defaultdict[tuple[Any, ...], Decimal] = defaultdict(Decimal)
+    refunds_by_keys: defaultdict[tuple[Any, ...], Decimal] = defaultdict(Decimal)
     expense_count = 0
     refunds_count = 0
     source_row_ids = []
@@ -165,17 +166,17 @@ def _get_spending[K:Hashable](valid_records: list[list[Record]], key: Callable[[
             match trans.transaction_type:
                 case TransactionType.EXPENSE:
                     if key is None:
-                         m = (trans.currency,)
+                        m: tuple[str, ...] = (trans.currency,)
                     else:
-                        m = (key(trans), trans.currency)
+                        m: tuple[str, ...]  = (*key(trans), trans.currency)
                     gross_by_keys[m] -= trans.amount
                     expense_count += 1
                     source_row_ids.append(r[0].source_row_id)
                 case TransactionType.REFUND:
                     if key is None:
-                        m = (trans.currency,)
+                        m: tuple[str, ...] = (trans.currency,)
                     else:
-                        m = (key(trans), trans.currency)
+                        m: tuple[str, ...]  = (*key(trans), trans.currency)
                     refunds_by_keys[m] += trans.amount
                     refunds_count += 1
                     source_row_ids.append(r[0].source_row_id)
