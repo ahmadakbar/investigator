@@ -4,8 +4,11 @@ import logging
 import sys
 from pathlib import Path
 
-from investigator.processing import check_quality, profile_dataset
-from investigator.schemas import DatasetProfile, QualityIssue
+from investigator.processing import check_quality, profile_dataset, summarize_spending
+from investigator.schemas import (
+    DatasetProfile,
+    QualityIssue,
+)
 from investigator.transaction_deck import load_transactions
 
 logging.basicConfig(
@@ -28,7 +31,7 @@ def load(path: str | Path):
     :return: Iterator[Transaction]
 
     """
-    with load_transactions(path) as deck:
+    with (load_transactions(path) as deck):
         logger.info(f"""digest: {deck.digest}, length: {len(deck)}""")
         df: DatasetProfile =  profile_dataset(deck)
         logger.info(df)
@@ -36,6 +39,8 @@ def load(path: str | Path):
         logger.info(f"{len(cq)} issues found.")
         for issue in cq:
             logger.info(issue)
+        result = summarize_spending(deck, start_date=None, end_date=None, key=lambda t:t.category)
+        logger.info(result)
 def cmd_evaluate(args):
     """:param args:"""
     pass
@@ -167,5 +172,5 @@ def run(argv: list[str] | None = None):
 
 if __name__ == "__main__":
     #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/empty.csv --question "Explain"'.split(' ')
-    sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
-    #sys.exit(run())
+    #sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
+    sys.exit(run())

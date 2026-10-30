@@ -1,6 +1,11 @@
+import logging
 from collections import defaultdict
+from collections.abc import Hashable
 from datetime import date
-from typing import Counter, Iterator, NoReturn
+from decimal import Decimal
+from typing import Callable, Counter, Iterator, NoReturn, Sequence
+
+from pydantic_extra_types.currency_code import ISO4217
 
 from investigator.schemas import (
     DatasetProfile,
@@ -8,11 +13,13 @@ from investigator.schemas import (
     QualityIssue,
     QualityIssueType,
     Record,
+    SpendingSummary,
     Transaction,
+    TransactionType,
 )
 from investigator.transaction_deck import TransactionDeck
 
-
+logger = logging.getLogger(__name__)
 def profile_dataset(deck: TransactionDeck) -> DatasetProfile:
     """Profile the transaction dataset."""
     earliest_date, lastest_date, missing_dates = _get_date_coverage(deck)
@@ -93,7 +100,7 @@ def check_quality(deck: TransactionDeck) -> list[QualityIssue]:
 
 
 def _partition_valid_records(
-        records: TransactionDeck
+        records: Sequence[Record]
 ) -> tuple[list[list[Record]], list[Record]]:
 
     # Step 1: Separate records into OK and Bad buckets
@@ -129,3 +136,83 @@ def _partition_valid_records(
 
     return valid_partitions, bad_records
 
+
+def summarize_spending[K:Hashable](
+        deck: TransactionDeck,
+        *,
+        start_date: date | None = None,
+        end_date: date | None = None,
+        key: Callable[[Transaction], K]|None = None,) -> SpendingSummary:
+    """Summarize spending from the transaction dataset."""
+    records = _records_from_a_period(deck, end_date, start_date)
+
+    valid_records, _ = _partition_valid_records(records)
+
+    return _get_spending(valid_records, key)
+
+
+
+def _get_spending[K:Hashable](valid_records: list[list[Record]], key: Callable[[Transaction], K] | None, ) -> SpendingSummary:
+    gross_by_keys: defaultdict[tuple[str, ...], Decimal] = defaultdict(Decimal)
+    refunds_by_keys: defaultdict[tuple[str, ...], Decimal] = defaultdict(Decimal)
+    expense_count = 0
+    refunds_count = 0
+    source_row_ids = []
+
+    for r in valid_records:
+        trans = r[0].transaction
+        if trans is not None:
+            match trans.transaction_type:
+                case TransactionType.EXPENSE:
+                    if key is None:
+                         m = (trans.currency,)
+                    else:
+                        m = (key(trans), trans.currency)
+                    gross_by_keys[m] -= trans.amount
+                    expense_count += 1
+                    source_row_ids.append(r[0].source_row_id)
+                case TransactionType.REFUND:
+                    if key is None:
+                        m = (trans.currency,)
+                    else:
+                        m = (key(trans), trans.currency)
+                    refunds_by_keys[m] += trans.amount
+                    refunds_count += 1
+                    source_row_ids.append(r[0].source_row_id)
+                case _:
+                    logger.debug("skipping other transactions")
+    keys = gross_by_keys.keys() | refunds_by_keys.keys()
+
+    net_by_keys: dict[tuple[str, ...], Decimal] = {
+        k: gross_by_keys.get(k, Decimal(0)) - refunds_by_keys.get(k, Decimal(0))
+        for k in keys
+    }
+    return SpendingSummary(
+        gross_by_keys, refunds_by_keys, net_by_keys, expense_count, refunds_count, source_row_ids)
+
+
+def _records_from_a_period(deck: TransactionDeck, end_date: date | None, start_date: date | None) -> Sequence[Record]:
+    if start_date is None and end_date is not None:
+        records = [
+            r for r in deck
+            if (t := r.transaction) is not None
+               and (d := t.date) is not None
+               and d <= end_date
+        ]
+    elif start_date is not None and end_date is None:
+        records = [
+            r for r in deck
+            if (t := r.transaction) is not None
+               and (d := t.date) is not None
+               and start_date <= d
+        ]
+    elif start_date is not None and end_date is not None:
+        records = [
+            r for r in deck
+            if (t := r.transaction) is not None
+               and (d := t.date) is not None
+               and start_date <= d <= end_date
+        ]
+    else:
+        records = deck
+    return records

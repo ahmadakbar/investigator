@@ -127,3 +127,60 @@ class QualityIssue(NamedTuple):
     message: str
     def __str__(self) -> str:
         return f"[{self.issue_type}] source_row_id [{self.source_row_ids}] Message: [{self.message}]"
+
+
+class SpendingSummary(NamedTuple):
+    """Represents SpendingSummary result."""
+    gross_expenses: dict[tuple[str, ...], Decimal]
+    refunds: dict[tuple[str, ...], Decimal]
+    net_spending: dict[tuple[str, ...], Decimal]
+    expense_count: int
+    refund_count: int
+    source_row_ids: list[str]
+
+    def __str__(self) -> str:
+        zero = Decimal(0)
+        columns = (self.gross_expenses, self.refunds, self.net_spending)
+        keys = sorted(
+            self.gross_expenses.keys() | self.refunds.keys() | self.net_spending.keys(),
+            key=lambda k: (k[-1], *k[:-1]) if k else ("",),
+            )
+
+        def currency(key: tuple[str, ...]) -> str:
+            return key[-1] if key else ""
+
+        def group(key: tuple[str, ...]) -> str:
+            return " / ".join(key[:-1]).strip() or "(uncategorized)"
+
+        def money(value: Decimal) -> str:
+            return f"{value:,.2f}"
+
+        currencies = sorted({currency(k) for k in keys})
+        header = ("Currency", "Group", "Gross", "Refunds", "Net")
+        rows = [
+            (currency(k), group(k), *(money(col.get(k, zero)) for col in columns))
+            for k in keys
+        ]
+        totals = [
+            (cur, "Total", *(money(sum((v for k, v in col.items() if currency(k) == cur), zero))
+                             for col in columns))
+            for cur in currencies
+        ]
+
+        widths = [max(len(row[i]) for row in (header, *rows, *totals)) for i in range(5)]
+
+        def fmt(row: tuple[str, ...]) -> str:
+            cur, grp, *nums = row
+            return "  ".join([
+                cur.ljust(widths[0]),
+                grp.ljust(widths[1]),
+                *(n.rjust(w) for n, w in zip(nums, widths[2:])),
+            ])
+
+        rule = "  ".join("-" * w for w in widths)
+        return "\n".join([
+            "\n",
+            fmt(header), rule, *map(fmt, rows), rule, *map(fmt, totals), "",
+            f"{self.expense_count} expenses, {self.refund_count} refunds "
+            f"from {len(self.source_row_ids)} source rows",
+        ])
