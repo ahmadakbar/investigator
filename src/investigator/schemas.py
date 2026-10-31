@@ -3,7 +3,7 @@
 import datetime as dt
 from decimal import Decimal
 from enum import Enum, StrEnum, auto
-from typing import Annotated, Any, Mapping, NamedTuple
+from typing import Annotated, Any, Counter, Mapping, NamedTuple
 
 from pydantic import BeforeValidator, ConfigDict
 from pydantic.dataclasses import dataclass
@@ -130,6 +130,7 @@ class QualityIssueType(StrEnum):
     MISSING_DATE = "missing_date"
     MISSING_CATEGORY = "missing_category"
     EXACT_DUPLICATE = "exact_duplicate"
+
 class QualityIssue(NamedTuple):
     """Represents QualityIssue result type"""
     issue_type: QualityIssueType
@@ -138,15 +139,32 @@ class QualityIssue(NamedTuple):
     def __str__(self) -> str:
         return f"[{self.issue_type}] source_row_id [{self.source_row_ids}] Message: [{self.message}]"
 
+class ExclusionReason(StrEnum):
+    VALIDATION_ERROR="validation_error"
+    RECORD_ERROR="record_error"
+    DUPLICATE_COPY="duplicate_copy"
+    INCOME="income"
+    TRANSFER="transfer"
+    MISSING_DATE="missing_date"
+    OUTSIDE_PERIOD="outside_period"
+
+class ExcludedRecord(NamedTuple):
+    source_row_id: str
+    reason: ExclusionReason
+    message: str
 
 class SpendingSummary(NamedTuple):
     """Represents SpendingSummary result."""
+    dataset_id:str
+    start_date: dt.date | None
+    end_date: dt.date | None
     gross_expenses: dict[tuple[str, ...], Decimal]
     refunds: dict[tuple[str, ...], Decimal]
     net_spending: dict[tuple[str, ...], Decimal]
     expense_count: int
     refund_count: int
     source_row_ids: list[str]
+    excluded_record: list[ExcludedRecord]
 
     def __str__(self) -> str:
         zero = Decimal(0)
@@ -155,16 +173,16 @@ class SpendingSummary(NamedTuple):
             self.gross_expenses.keys() | self.refunds.keys() | self.net_spending.keys(),
             key=lambda k: (k[-1], *k[:-1]) if k else ("",),
             )
-
+    
         def currency(key: tuple[str, ...]) -> str:
             return key[-1] if key else ""
-
+    
         def group(key: tuple[str, ...]) -> str:
             return " / ".join(key[:-1]).strip() or "(uncategorized)"
-
+    
         def money(value: Decimal) -> str:
             return f"{value:,.2f}"
-
+    
         currencies = sorted({currency(k) for k in keys})
         header = ("Currency", "Group", "Gross", "Refunds", "Net")
         rows = [
@@ -176,9 +194,9 @@ class SpendingSummary(NamedTuple):
                              for col in columns))
             for cur in currencies
         ]
-
+    
         widths = [max(len(row[i]) for row in (header, *rows, *totals)) for i in range(5)]
-
+    
         def fmt(row: tuple[str, ...]) -> str:
             cur, grp, *nums = row
             return "  ".join([
@@ -186,11 +204,50 @@ class SpendingSummary(NamedTuple):
                 grp.ljust(widths[1]),
                 *(n.rjust(w) for n, w in zip(nums, widths[2:])),
             ])
-
+    
         rule = "  ".join("-" * w for w in widths)
-        return "\n".join([
+        lines = [
             "\n",
             fmt(header), rule, *map(fmt, rows), rule, *map(fmt, totals), "",
             f"{self.expense_count} expenses, {self.refund_count} refunds "
             f"from {len(self.source_row_ids)} source rows",
-        ])
+        ]
+    
+        if self.excluded_record:
+            lines.extend(["", *self._format_excluded()])
+    
+        return "\n".join(lines)
+
+    def _format_excluded(self) -> list[str]:
+        excluded = self.excluded_record
+        counts = Counter(e.reason for e in excluded)
+
+        # Per-reason counts, in enum declaration order
+        summary = ", ".join(
+            f"{counts[reason]} {reason.value}"
+            for reason in ExclusionReason
+            if counts[reason]
+        )
+
+        header = ("Row ID", "Reason", "Message")
+        rows = [
+            (e.source_row_id, e.reason.value, e.message)
+            for e in sorted(
+                excluded,
+                key=lambda e: (list(ExclusionReason).index(e.reason), e.source_row_id),
+            )
+        ]
+        # Message is the last column, so it isn't padded
+        widths = [max(len(row[i]) for row in (header, *rows)) for i in range(2)]
+
+        def fmt(row: tuple[str, str, str]) -> str:
+            rid, reason, msg = row
+            return f"{rid.ljust(widths[0])}  {reason.ljust(widths[1])}  {msg}".rstrip()
+
+        rule = f"{'-' * widths[0]}  {'-' * widths[1]}  {'-' * len(header[2])}"
+        return [
+            f"Excluded {len(excluded)} records: {summary}",
+            "",
+            fmt(header), rule, *map(fmt, rows),
+        ]
+
