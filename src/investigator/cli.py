@@ -172,5 +172,5 @@ def run(argv: list[str] | None = None):
 
 if __name__ == "__main__":
     #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/empty.csv --question "Explain"'.split(' ')
-    sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
-    # sys.exit(run())
+    # sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
+     sys.exit(run())
