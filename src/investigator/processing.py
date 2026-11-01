@@ -166,7 +166,7 @@ def _get_spending[K:tuple[str, ...]](
                                      dataset_id:str,
                                      start_date: date | None,
                                      end_date: date | None ,
-                                     inperiod_original_records: list[Record],
+                                     inperiod_original_records: Sequence[Record],
                                      duplicate_records: list[Record],
                                      invalid_records: list[Record],
                                      outside_period_records: Sequence[Record],
