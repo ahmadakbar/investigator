@@ -24,7 +24,8 @@ class TransactionType(StrEnum):
     INCOME ="income"
     EXPENSE = "expense"
 
-class Outcome(Enum):
+class Outcome(StrEnum):
+    """Parse outcome of a record; values are lowercase names ("ok", "invalid", "error")."""
     OK = auto()
     INVALID = auto()
     ERROR = auto()
@@ -251,3 +252,13 @@ class SpendingSummary(NamedTuple):
             fmt(header), rule, *map(fmt, rows),
         ]
 
+@dataclass(frozen=True, slots=True, config=ConfigDict(str_strip_whitespace=True))
+class Output:
+    schema_version: str
+    question: str|None
+    dataset_id: str
+    profile: DatasetProfile
+    quality_issues: list[QualityIssue]
+    spending_summary_by_category: SpendingSummary
+    spending_summary_by_currency: SpendingSummary
+    monthly_spending_summary: SpendingSummary

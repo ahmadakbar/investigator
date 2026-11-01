@@ -5,14 +5,17 @@ import sys
 from pathlib import Path
 
 from investigator.processing import check_quality, profile_dataset, summarize_spending
+from investigator.reporting import _dumps, write_json
 from investigator.schemas import (
     DatasetProfile,
+    Output,
     QualityIssue,
+    SpendingSummary,
 )
 from investigator.transaction_deck import load_transactions
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s — %(message)s",
     stream=sys.stdout,
 )
@@ -21,26 +24,35 @@ logger = logging.getLogger(__name__)
 
 def cmd_analyze(args):
     """:param args:"""
-    logger.info(f"analyze {args.csv} question={args.question!r}")
-    load(args.csv)
+    logger.debug(f"analyze {args.csv} question={args.question!r}")
+    load(args.csv, args.output, args.question)
 
-def load(path: str | Path):
+def load(path: str | Path, output_file:str|None, question: str|None):
     """Load and convert a transaction from a file.
 
     :param path: str | Path
+    :param output: str
     :return: Iterator[Transaction]
 
     """
     with (load_transactions(path) as deck):
-        logger.info(f"""digest: {deck.digest}, length: {len(deck)}""")
+        logger.debug(f"""digest: {deck.digest}, length: {len(deck)}""")
         df: DatasetProfile =  profile_dataset(deck)
-        logger.info(df)
         cq: list[QualityIssue] = check_quality(deck)
-        logger.info(f"{len(cq)} issues found.")
-        for issue in cq:
-            logger.info(issue)
-        result = summarize_spending(deck, start_date=None, end_date=None, key=lambda t:(t.category,))
-        logger.info(result)
+        logger.debug(f"{len(cq)} issues found.")
+        result_by_category: SpendingSummary = summarize_spending(deck, start_date=None, end_date=None, key=lambda t:(t.category,))
+        result_by_currency: SpendingSummary = summarize_spending(deck, start_date=None, end_date=None, key=None)
+        monthly: SpendingSummary = summarize_spending(
+            deck,
+            key=lambda t: (
+                t.date.strftime("%Y-%m") if t.date is not None else "Undated",
+            ),
+        )
+        output = Output("1.0", question, df.dataset_id, df, cq, result_by_category, result_by_currency, monthly)
+        if output_file is not None:
+            write_json(output, output_file)
+        else:
+            print(_dumps(output))
 def cmd_evaluate(args):
     """:param args:"""
     pass
@@ -108,6 +120,11 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument(
         "-q", "--question", required=True, help="question to answer about the data"
     )
+    p.add_argument(
+        "-o","--output",
+        type=Path,
+        help="Write the result as JSON to this file (default: print to stdout)",
+    )
     p.set_defaults(func=cmd_analyze)
 
     # python investigator evaluate --split development
@@ -172,5 +189,5 @@ def run(argv: list[str] | None = None):
 
 if __name__ == "__main__":
     #'analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/empty.csv --question "Explain"'.split(' ')
-    # sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain"'.split(' ')))
-     sys.exit(run())
+    #sys.exit(run('analyze /Users/akbarahmad2/work/My/harness/Investigator/investigator/data/demo/synthetic_personal_spending.csv --question "Explain" --output analysis.json'.split(' ')))
+    sys.exit(run())

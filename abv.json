@@ -1,0 +1,1780 @@
+{
+  "dataset_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe",
+  "monthly_spending_summary": {
+    "dataset_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe",
+    "end_date": null,
+    "excluded_record": [
+      {
+        "message": "1 validation error for Transaction\ndate\n  Input should be a valid date or datetime, day value is outside expected range [type=date_from_datetime_parsing, input_value='2026-06-31', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/date_from_datetime_parsing",
+        "reason": "validation_error",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:151"
+      },
+      {
+        "message": "row 303: ValueError('zip() argument 2 is longer than argument 1')",
+        "reason": "record_error",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:304"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:28"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:126"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:239"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:1"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:6"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:7"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:51"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:56"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:57"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:101"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:106"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:107"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:152"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:157"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:158"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:201"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:206"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:207"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:253"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:258"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:259"
+      }
+    ],
+    "expense_count": 280,
+    "gross_expenses": [
+      {
+        "key": [
+          "2026-04",
+          "EUR"
+        ],
+        "value": "2453.80"
+      },
+      {
+        "key": [
+          "2026-05",
+          "EUR"
+        ],
+        "value": "3235.86"
+      },
+      {
+        "key": [
+          "2026-06",
+          "EUR"
+        ],
+        "value": "2543.46"
+      },
+      {
+        "key": [
+          "2026-07",
+          "EUR"
+        ],
+        "value": "2596.91"
+      },
+      {
+        "key": [
+          "2026-08",
+          "EUR"
+        ],
+        "value": "2750.18"
+      },
+      {
+        "key": [
+          "2026-08",
+          "USD"
+        ],
+        "value": "19.00"
+      },
+      {
+        "key": [
+          "2026-09",
+          "EUR"
+        ],
+        "value": "2726.53"
+      },
+      {
+        "key": [
+          "2026-09",
+          "USD"
+        ],
+        "value": "68.00"
+      }
+    ],
+    "net_spending": [
+      {
+        "key": [
+          "2026-04",
+          "EUR"
+        ],
+        "value": "2453.80"
+      },
+      {
+        "key": [
+          "2026-05",
+          "EUR"
+        ],
+        "value": "3235.86"
+      },
+      {
+        "key": [
+          "2026-06",
+          "EUR"
+        ],
+        "value": "2423.46"
+      },
+      {
+        "key": [
+          "2026-07",
+          "EUR"
+        ],
+        "value": "2596.91"
+      },
+      {
+        "key": [
+          "2026-08",
+          "EUR"
+        ],
+        "value": "2750.18"
+      },
+      {
+        "key": [
+          "2026-08",
+          "USD"
+        ],
+        "value": "19.00"
+      },
+      {
+        "key": [
+          "2026-09",
+          "EUR"
+        ],
+        "value": "2726.53"
+      },
+      {
+        "key": [
+          "2026-09",
+          "USD"
+        ],
+        "value": "68.00"
+      }
+    ],
+    "refund_count": 1,
+    "refunds": [
+      {
+        "key": [
+          "2026-06",
+          "EUR"
+        ],
+        "value": "120.00"
+      }
+    ],
+    "source_row_ids": [
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:2",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:3",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:4",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:5",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:8",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:9",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:10",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:11",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:12",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:13",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:14",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:15",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:16",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:17",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:18",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:19",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:20",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:21",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:22",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:23",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:24",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:25",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:26",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:27",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:29",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:30",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:31",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:32",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:33",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:34",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:35",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:36",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:37",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:38",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:39",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:40",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:41",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:42",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:43",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:44",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:45",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:46",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:47",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:48",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:49",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:50",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:52",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:53",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:54",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:55",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:58",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:59",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:60",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:61",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:62",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:63",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:64",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:65",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:66",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:67",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:68",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:69",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:70",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:71",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:72",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:73",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:74",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:75",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:76",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:77",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:78",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:79",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:80",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:81",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:82",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:83",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:84",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:85",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:86",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:87",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:88",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:89",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:90",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:91",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:92",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:93",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:94",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:95",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:96",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:97",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:98",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:99",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:100",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:102",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:103",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:104",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:105",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:108",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:109",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:110",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:111",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:112",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:113",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:114",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:115",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:116",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:117",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:118",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:119",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:120",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:121",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:122",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:123",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:124",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:125",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:127",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:128",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:129",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:130",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:131",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:132",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:133",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:134",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:135",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:136",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:137",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:138",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:139",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:140",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:141",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:142",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:143",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:144",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:145",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:146",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:147",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:148",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:149",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:150",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:153",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:154",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:155",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:156",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:159",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:160",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:161",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:162",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:163",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:164",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:165",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:166",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:167",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:168",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:169",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:170",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:171",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:172",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:173",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:174",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:175",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:176",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:177",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:178",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:179",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:180",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:181",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:182",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:183",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:184",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:185",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:186",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:187",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:188",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:189",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:190",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:191",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:192",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:193",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:194",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:195",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:196",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:197",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:198",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:199",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:200",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:202",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:203",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:204",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:205",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:208",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:209",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:210",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:211",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:212",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:213",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:214",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:215",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:216",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:217",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:218",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:219",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:220",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:221",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:222",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:223",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:224",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:225",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:226",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:227",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:228",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:229",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:230",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:231",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:232",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:233",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:234",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:235",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:236",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:237",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:238",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:240",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:241",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:242",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:243",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:244",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:245",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:246",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:247",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:248",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:249",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:250",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:251",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:252",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:254",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:255",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:256",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:257",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:260",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:261",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:262",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:263",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:264",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:265",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:266",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:267",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:268",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:269",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:270",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:271",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:272",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:273",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:274",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:275",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:276",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:277",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:278",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:279",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:280",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:281",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:282",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:283",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:284",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:285",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:286",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:287",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:288",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:289",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:290",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:291",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:292",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:293",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:294",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:295",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:296",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:297",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:298",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:299",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:300",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:301",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:302",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:303"
+    ],
+    "start_date": null
+  },
+  "profile": {
+    "columns": [
+      "transaction_id",
+      "date",
+      "merchant",
+      "category",
+      "amount",
+      "currency",
+      "account",
+      "transaction_type",
+      "related_transaction_id",
+      "description"
+    ],
+    "currency_counts": {
+      "EUR": 299,
+      "USD": 3
+    },
+    "dataset_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe",
+    "earliest_date": "2026-04-01",
+    "latest_date": "2026-09-26",
+    "missing_categories": [
+      {
+        "account": "Card",
+        "amount": "-25.82",
+        "category": "",
+        "currency": "EUR",
+        "date": "2026-04-06",
+        "description": "Food shopping",
+        "merchant": "Market Basket",
+        "related_transaction_id": "",
+        "transaction_id": "TX00010",
+        "transaction_type": "expense"
+      },
+      {
+        "account": "Card",
+        "amount": "-39.67",
+        "category": "",
+        "currency": "EUR",
+        "date": "2026-05-10",
+        "description": "Food shopping",
+        "merchant": "MARKET BASKET",
+        "related_transaction_id": "",
+        "transaction_id": "TX00062",
+        "transaction_type": "expense"
+      },
+      {
+        "account": "Card",
+        "amount": "-64.88",
+        "category": "",
+        "currency": "EUR",
+        "date": "2026-06-20",
+        "description": "Food shopping",
+        "merchant": "MarketBasket",
+        "related_transaction_id": "",
+        "transaction_id": "TX00117",
+        "transaction_type": "expense"
+      },
+      {
+        "account": "Card",
+        "amount": "-27.36",
+        "category": "",
+        "currency": "EUR",
+        "date": "2026-07-18",
+        "description": "Food shopping",
+        "merchant": "MarketBasket",
+        "related_transaction_id": "",
+        "transaction_id": "TX00165",
+        "transaction_type": "expense"
+      },
+      {
+        "account": "Card",
+        "amount": "-40.66",
+        "category": "",
+        "currency": "EUR",
+        "date": "2026-08-18",
+        "description": "Food shopping",
+        "merchant": "Market Basket",
+        "related_transaction_id": "",
+        "transaction_id": "TX00214",
+        "transaction_type": "expense"
+      },
+      {
+        "account": "Card",
+        "amount": "-60.78",
+        "category": "",
+        "currency": "EUR",
+        "date": "2026-09-17",
+        "description": "Food shopping",
+        "merchant": "Market Basket",
+        "related_transaction_id": "",
+        "transaction_id": "TX00262",
+        "transaction_type": "expense"
+      }
+    ],
+    "missing_dates": [],
+    "outcome_counts": {
+      "error": 1,
+      "invalid": 1,
+      "ok": 302
+    },
+    "total_records": 304
+  },
+  "quality_issues": [
+    {
+      "issue_type": "missing_category",
+      "message": "Transaction category is missing.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:12"
+      ]
+    },
+    {
+      "issue_type": "missing_category",
+      "message": "Transaction category is missing.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:71"
+      ]
+    },
+    {
+      "issue_type": "missing_category",
+      "message": "Transaction category is missing.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:140"
+      ]
+    },
+    {
+      "issue_type": "validation_error",
+      "message": "1 validation error for Transaction\ndate\n  Input should be a valid date or datetime, day value is outside expected range [type=date_from_datetime_parsing, input_value='2026-06-31', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/date_from_datetime_parsing",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:151"
+      ]
+    },
+    {
+      "issue_type": "missing_category",
+      "message": "Transaction category is missing.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:187"
+      ]
+    },
+    {
+      "issue_type": "missing_category",
+      "message": "Transaction category is missing.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:236"
+      ]
+    },
+    {
+      "issue_type": "missing_category",
+      "message": "Transaction category is missing.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:286"
+      ]
+    },
+    {
+      "issue_type": "record_error",
+      "message": "row 303: ValueError('zip() argument 2 is longer than argument 1')",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:304"
+      ]
+    },
+    {
+      "issue_type": "exact_duplicate",
+      "message": "Duplicate Entry.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:27",
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:28"
+      ]
+    },
+    {
+      "issue_type": "exact_duplicate",
+      "message": "Duplicate Entry.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:125",
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:126"
+      ]
+    },
+    {
+      "issue_type": "exact_duplicate",
+      "message": "Duplicate Entry.",
+      "source_row_ids": [
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:238",
+        "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:239"
+      ]
+    }
+  ],
+  "question": "Explain spending changes",
+  "schema_version": "1.0",
+  "spending_summary_by_category": {
+    "dataset_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe",
+    "end_date": null,
+    "excluded_record": [
+      {
+        "message": "1 validation error for Transaction\ndate\n  Input should be a valid date or datetime, day value is outside expected range [type=date_from_datetime_parsing, input_value='2026-06-31', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/date_from_datetime_parsing",
+        "reason": "validation_error",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:151"
+      },
+      {
+        "message": "row 303: ValueError('zip() argument 2 is longer than argument 1')",
+        "reason": "record_error",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:304"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:28"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:126"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:239"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:1"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:6"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:7"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:51"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:56"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:57"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:101"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:106"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:107"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:152"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:157"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:158"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:201"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:206"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:207"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:253"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:258"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:259"
+      }
+    ],
+    "expense_count": 280,
+    "gross_expenses": [
+      {
+        "key": [
+          "",
+          "EUR"
+        ],
+        "value": "259.17"
+      },
+      {
+        "key": [
+          "Dining",
+          "EUR"
+        ],
+        "value": "1721.02"
+      },
+      {
+        "key": [
+          "Eating out",
+          "EUR"
+        ],
+        "value": "183.66"
+      },
+      {
+        "key": [
+          "Electronics",
+          "EUR"
+        ],
+        "value": "899.00"
+      },
+      {
+        "key": [
+          "Fitness",
+          "EUR"
+        ],
+        "value": "179.40"
+      },
+      {
+        "key": [
+          "Groceries",
+          "EUR"
+        ],
+        "value": "3925.48"
+      },
+      {
+        "key": [
+          "Housing",
+          "EUR"
+        ],
+        "value": "5700.00"
+      },
+      {
+        "key": [
+          "Learning",
+          "USD"
+        ],
+        "value": "49.00"
+      },
+      {
+        "key": [
+          "Shopping",
+          "EUR"
+        ],
+        "value": "1712.11"
+      },
+      {
+        "key": [
+          "Subscriptions",
+          "EUR"
+        ],
+        "value": "95.88"
+      },
+      {
+        "key": [
+          "Subscriptions",
+          "USD"
+        ],
+        "value": "38.00"
+      },
+      {
+        "key": [
+          "Transport",
+          "EUR"
+        ],
+        "value": "603.10"
+      },
+      {
+        "key": [
+          "Utilities",
+          "EUR"
+        ],
+        "value": "593.94"
+      },
+      {
+        "key": [
+          "groceries",
+          "EUR"
+        ],
+        "value": "433.98"
+      }
+    ],
+    "net_spending": [
+      {
+        "key": [
+          "",
+          "EUR"
+        ],
+        "value": "259.17"
+      },
+      {
+        "key": [
+          "Dining",
+          "EUR"
+        ],
+        "value": "1721.02"
+      },
+      {
+        "key": [
+          "Eating out",
+          "EUR"
+        ],
+        "value": "183.66"
+      },
+      {
+        "key": [
+          "Electronics",
+          "EUR"
+        ],
+        "value": "779.00"
+      },
+      {
+        "key": [
+          "Fitness",
+          "EUR"
+        ],
+        "value": "179.40"
+      },
+      {
+        "key": [
+          "Groceries",
+          "EUR"
+        ],
+        "value": "3925.48"
+      },
+      {
+        "key": [
+          "Housing",
+          "EUR"
+        ],
+        "value": "5700.00"
+      },
+      {
+        "key": [
+          "Learning",
+          "USD"
+        ],
+        "value": "49.00"
+      },
+      {
+        "key": [
+          "Shopping",
+          "EUR"
+        ],
+        "value": "1712.11"
+      },
+      {
+        "key": [
+          "Subscriptions",
+          "EUR"
+        ],
+        "value": "95.88"
+      },
+      {
+        "key": [
+          "Subscriptions",
+          "USD"
+        ],
+        "value": "38.00"
+      },
+      {
+        "key": [
+          "Transport",
+          "EUR"
+        ],
+        "value": "603.10"
+      },
+      {
+        "key": [
+          "Utilities",
+          "EUR"
+        ],
+        "value": "593.94"
+      },
+      {
+        "key": [
+          "groceries",
+          "EUR"
+        ],
+        "value": "433.98"
+      }
+    ],
+    "refund_count": 1,
+    "refunds": [
+      {
+        "key": [
+          "Electronics",
+          "EUR"
+        ],
+        "value": "120.00"
+      }
+    ],
+    "source_row_ids": [
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:2",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:3",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:4",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:5",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:8",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:9",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:10",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:11",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:12",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:13",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:14",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:15",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:16",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:17",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:18",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:19",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:20",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:21",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:22",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:23",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:24",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:25",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:26",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:27",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:29",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:30",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:31",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:32",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:33",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:34",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:35",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:36",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:37",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:38",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:39",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:40",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:41",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:42",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:43",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:44",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:45",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:46",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:47",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:48",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:49",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:50",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:52",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:53",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:54",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:55",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:58",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:59",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:60",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:61",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:62",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:63",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:64",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:65",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:66",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:67",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:68",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:69",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:70",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:71",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:72",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:73",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:74",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:75",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:76",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:77",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:78",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:79",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:80",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:81",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:82",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:83",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:84",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:85",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:86",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:87",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:88",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:89",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:90",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:91",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:92",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:93",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:94",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:95",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:96",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:97",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:98",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:99",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:100",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:102",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:103",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:104",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:105",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:108",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:109",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:110",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:111",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:112",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:113",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:114",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:115",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:116",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:117",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:118",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:119",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:120",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:121",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:122",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:123",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:124",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:125",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:127",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:128",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:129",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:130",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:131",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:132",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:133",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:134",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:135",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:136",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:137",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:138",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:139",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:140",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:141",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:142",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:143",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:144",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:145",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:146",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:147",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:148",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:149",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:150",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:153",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:154",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:155",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:156",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:159",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:160",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:161",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:162",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:163",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:164",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:165",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:166",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:167",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:168",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:169",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:170",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:171",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:172",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:173",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:174",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:175",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:176",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:177",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:178",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:179",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:180",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:181",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:182",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:183",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:184",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:185",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:186",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:187",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:188",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:189",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:190",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:191",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:192",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:193",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:194",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:195",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:196",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:197",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:198",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:199",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:200",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:202",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:203",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:204",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:205",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:208",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:209",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:210",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:211",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:212",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:213",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:214",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:215",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:216",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:217",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:218",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:219",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:220",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:221",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:222",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:223",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:224",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:225",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:226",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:227",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:228",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:229",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:230",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:231",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:232",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:233",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:234",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:235",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:236",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:237",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:238",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:240",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:241",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:242",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:243",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:244",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:245",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:246",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:247",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:248",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:249",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:250",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:251",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:252",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:254",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:255",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:256",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:257",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:260",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:261",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:262",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:263",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:264",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:265",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:266",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:267",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:268",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:269",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:270",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:271",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:272",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:273",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:274",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:275",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:276",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:277",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:278",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:279",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:280",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:281",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:282",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:283",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:284",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:285",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:286",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:287",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:288",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:289",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:290",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:291",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:292",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:293",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:294",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:295",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:296",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:297",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:298",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:299",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:300",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:301",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:302",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:303"
+    ],
+    "start_date": null
+  },
+  "spending_summary_by_currency": {
+    "dataset_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe",
+    "end_date": null,
+    "excluded_record": [
+      {
+        "message": "1 validation error for Transaction\ndate\n  Input should be a valid date or datetime, day value is outside expected range [type=date_from_datetime_parsing, input_value='2026-06-31', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.14/v/date_from_datetime_parsing",
+        "reason": "validation_error",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:151"
+      },
+      {
+        "message": "row 303: ValueError('zip() argument 2 is longer than argument 1')",
+        "reason": "record_error",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:304"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:28"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:126"
+      },
+      {
+        "message": "duplicate record",
+        "reason": "duplicate_copy",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:239"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:1"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:6"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:7"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:51"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:56"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:57"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:101"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:106"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:107"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:152"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:157"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:158"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:201"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:206"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:207"
+      },
+      {
+        "message": "Income transaction is not included in spending report",
+        "reason": "income",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:253"
+      },
+      {
+        "message": "Outward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:258"
+      },
+      {
+        "message": "Inward transfer transaction is not included in spending report",
+        "reason": "transfer",
+        "source_row_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:259"
+      }
+    ],
+    "expense_count": 280,
+    "gross_expenses": [
+      {
+        "key": [
+          "EUR"
+        ],
+        "value": "16306.74"
+      },
+      {
+        "key": [
+          "USD"
+        ],
+        "value": "87.00"
+      }
+    ],
+    "net_spending": [
+      {
+        "key": [
+          "EUR"
+        ],
+        "value": "16186.74"
+      },
+      {
+        "key": [
+          "USD"
+        ],
+        "value": "87.00"
+      }
+    ],
+    "refund_count": 1,
+    "refunds": [
+      {
+        "key": [
+          "EUR"
+        ],
+        "value": "120.00"
+      }
+    ],
+    "source_row_ids": [
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:2",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:3",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:4",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:5",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:8",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:9",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:10",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:11",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:12",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:13",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:14",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:15",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:16",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:17",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:18",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:19",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:20",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:21",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:22",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:23",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:24",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:25",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:26",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:27",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:29",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:30",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:31",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:32",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:33",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:34",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:35",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:36",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:37",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:38",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:39",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:40",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:41",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:42",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:43",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:44",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:45",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:46",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:47",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:48",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:49",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:50",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:52",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:53",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:54",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:55",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:58",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:59",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:60",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:61",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:62",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:63",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:64",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:65",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:66",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:67",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:68",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:69",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:70",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:71",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:72",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:73",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:74",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:75",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:76",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:77",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:78",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:79",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:80",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:81",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:82",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:83",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:84",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:85",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:86",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:87",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:88",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:89",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:90",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:91",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:92",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:93",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:94",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:95",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:96",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:97",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:98",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:99",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:100",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:102",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:103",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:104",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:105",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:108",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:109",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:110",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:111",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:112",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:113",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:114",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:115",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:116",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:117",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:118",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:119",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:120",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:121",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:122",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:123",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:124",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:125",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:127",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:128",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:129",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:130",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:131",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:132",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:133",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:134",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:135",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:136",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:137",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:138",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:139",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:140",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:141",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:142",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:143",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:144",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:145",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:146",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:147",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:148",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:149",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:150",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:153",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:154",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:155",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:156",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:159",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:160",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:161",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:162",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:163",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:164",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:165",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:166",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:167",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:168",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:169",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:170",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:171",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:172",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:173",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:174",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:175",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:176",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:177",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:178",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:179",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:180",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:181",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:182",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:183",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:184",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:185",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:186",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:187",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:188",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:189",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:190",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:191",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:192",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:193",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:194",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:195",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:196",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:197",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:198",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:199",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:200",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:202",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:203",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:204",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:205",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:208",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:209",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:210",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:211",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:212",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:213",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:214",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:215",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:216",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:217",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:218",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:219",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:220",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:221",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:222",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:223",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:224",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:225",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:226",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:227",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:228",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:229",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:230",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:231",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:232",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:233",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:234",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:235",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:236",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:237",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:238",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:240",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:241",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:242",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:243",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:244",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:245",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:246",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:247",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:248",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:249",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:250",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:251",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:252",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:254",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:255",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:256",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:257",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:260",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:261",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:262",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:263",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:264",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:265",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:266",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:267",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:268",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:269",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:270",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:271",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:272",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:273",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:274",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:275",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:276",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:277",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:278",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:279",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:280",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:281",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:282",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:283",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:284",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:285",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:286",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:287",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:288",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:289",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:290",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:291",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:292",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:293",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:294",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:295",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:296",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:297",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:298",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:299",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:300",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:301",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:302",
+      "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe:303"
+    ],
+    "start_date": null
+  }
+}

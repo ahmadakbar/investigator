@@ -1,0 +1,102 @@
+{
+  "dataset_id": "7ba6cd57d58ee73c0409d737d84fc1becb2b4f9e1936b9fb2c718b4f5bb22cbe",
+  "columns": [
+    "transaction_id",
+    "date",
+    "merchant",
+    "category",
+    "amount",
+    "currency",
+    "account",
+    "transaction_type",
+    "related_transaction_id",
+    "description"
+  ],
+  "total_records": 304,
+  "outcome_counts": {
+    "1": 302,
+    "2": 1,
+    "3": 1
+  },
+  "currency_counts": {
+    "EUR": 299,
+    "USD": 3
+  },
+  "earliest_date": "2026-04-01",
+  "latest_date": "2026-09-26",
+  "missing_dates": [],
+  "missing_categories": [
+    {
+      "transaction_id": "TX00010",
+      "merchant": "Market Basket",
+      "category": "",
+      "amount": "-25.82",
+      "currency": "EUR",
+      "account": "Card",
+      "transaction_type": "expense",
+      "date": "2026-04-06",
+      "related_transaction_id": "",
+      "description": "Food shopping"
+    },
+    {
+      "transaction_id": "TX00062",
+      "merchant": "MARKET BASKET",
+      "category": "",
+      "amount": "-39.67",
+      "currency": "EUR",
+      "account": "Card",
+      "transaction_type": "expense",
+      "date": "2026-05-10",
+      "related_transaction_id": "",
+      "description": "Food shopping"
+    },
+    {
+      "transaction_id": "TX00117",
+      "merchant": "MarketBasket",
+      "category": "",
+      "amount": "-64.88",
+      "currency": "EUR",
+      "account": "Card",
+      "transaction_type": "expense",
+      "date": "2026-06-20",
+      "related_transaction_id": "",
+      "description": "Food shopping"
+    },
+    {
+      "transaction_id": "TX00165",
+      "merchant": "MarketBasket",
+      "category": "",
+      "amount": "-27.36",
+      "currency": "EUR",
+      "account": "Card",
+      "transaction_type": "expense",
+      "date": "2026-07-18",
+      "related_transaction_id": "",
+      "description": "Food shopping"
+    },
+    {
+      "transaction_id": "TX00214",
+      "merchant": "Market Basket",
+      "category": "",
+      "amount": "-40.66",
+      "currency": "EUR",
+      "account": "Card",
+      "transaction_type": "expense",
+      "date": "2026-08-18",
+      "related_transaction_id": "",
+      "description": "Food shopping"
+    },
+    {
+      "transaction_id": "TX00262",
+      "merchant": "Market Basket",
+      "category": "",
+      "amount": "-60.78",
+      "currency": "EUR",
+      "account": "Card",
+      "transaction_type": "expense",
+      "date": "2026-09-17",
+      "related_transaction_id": "",
+      "description": "Food shopping"
+    }
+  ]
+}
