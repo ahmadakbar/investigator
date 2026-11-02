@@ -1,18 +1,8 @@
-# Lean spending verification
-
-This additive package was developed against `investigator(20261101-040640).zip`.
-The requested Mac directory was unavailable in this session. Extract this ZIP
-into `/Users/akbarahmad2/work/My/harness/Investigator/investigator` to add it to
-your checkout. It adds files; it does not replace the existing calculation,
-CLI, dependency configuration, or lockfile. No new Python dependency is needed.
-
 ## Install and run
 
-After downloading `investigator_lean_checker.zip`:
 
 ```bash
 cd /Users/akbarahmad2/work/My/harness/Investigator/investigator
-unzip -n ~/Downloads/investigator_lean_checker.zip
 
 cd verification/spending
 lake build
