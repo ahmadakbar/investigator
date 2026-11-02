@@ -1,0 +1,10 @@
+name = "spending_verification"
+version = "0.1.0"
+defaultTargets = ["spending_checker"]
+
+[[lean_lib]]
+name = "SpendingSpec"
+
+[[lean_exe]]
+name = "spending_checker"
+root = "Main"
