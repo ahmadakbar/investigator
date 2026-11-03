@@ -30,7 +30,7 @@ def main ():
         for call in getattr(message, "tool_calls", []):
             print(call["name"], call["args"])
 
-    print(result["messages"][-1].content)
+    print(result["messages"][-1].text)
 
 if __name__ == "__main__":
     main()
