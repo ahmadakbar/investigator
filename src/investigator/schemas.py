@@ -1,4 +1,4 @@
-"""TODO."""
+"""Schemas related to this app."""
 
 import datetime as dt
 from decimal import Decimal

@@ -1,3 +1,4 @@
+"""All 3 commands for profiling dataset, checking quality and summarizing spending."""
 import logging
 from collections import defaultdict
 from datetime import date

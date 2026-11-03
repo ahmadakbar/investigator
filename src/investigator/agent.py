@@ -1,3 +1,4 @@
+"""Agent implementation."""
 from deepagents import create_deep_agent
 
 from investigator.tools.agent_tools import make_tools

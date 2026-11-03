@@ -1,3 +1,4 @@
+"""JSON converter for final report."""
 import dataclasses
 import json
 from datetime import date, datetime

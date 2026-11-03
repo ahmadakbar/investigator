@@ -1,3 +1,4 @@
+"""Tooling for agents."""
 import threading
 from datetime import date
 from typing import Literal, assert_never

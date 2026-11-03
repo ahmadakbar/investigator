@@ -1,3 +1,4 @@
+"""Random-access view of a transactions CSV."""
 import csv
 import hashlib
 from array import array
